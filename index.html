@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ground Truth Network — Wimberley, TX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="site-title">
+        <div class="site-icon">◉</div>
+        <div>
+          <h1>Ground Truth Network</h1>
+          <p>Wimberley, Texas · Wildlife &amp; Weather</p>
+        </div>
+      </div>
+      <button id="stream-toggle" class="btn-live">
+        <span class="live-dot"></span> Live Feed
+      </button>
+    </div>
+  </header>
+
+  <div id="stream-panel" class="stream-panel">
+    <div class="stream-inner">
+      <video id="live-video" controls autoplay muted playsinline></video>
+      <div id="stream-status" class="stream-status">Connecting…</div>
+    </div>
+  </div>
+
+  <main>
+    <div id="stats-bar" class="stats-bar"></div>
+
+    <nav id="category-tabs" class="category-tabs"></nav>
+
+    <div id="media-grid" class="media-grid">
+      <div class="loading"></div>
+    </div>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden">
+    <button id="lb-close" class="lb-close">✕</button>
+    <div class="lb-inner">
+      <img id="lb-img" class="lb-media" src="" alt="">
+      <video id="lb-video" class="lb-media hidden" controls playsinline></video>
+      <div id="lb-meta" class="lb-meta"></div>
+    </div>
+    <div class="lb-controls">
+      <button id="lb-prev" class="lb-btn">&#8249;</button>
+      <button id="lb-next" class="lb-btn lb-btn-right">&#8250;</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
