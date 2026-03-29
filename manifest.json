@@ -1,6 +1,84 @@
 {
   "entries": [
     {
+      "timestamp": "20260317_104642",
+      "label": "scene",
+      "score": null,
+      "categories": [
+        "weather"
+      ],
+      "camera": "camera_raw",
+      "event_id": null,
+      "snapshot": "weather/20260317_104642_scene_camera_raw.jpg",
+      "clip": null,
+      "source": "backfill_scene"
+    },
+    {
+      "timestamp": "20260317_104640",
+      "label": "scene",
+      "score": null,
+      "categories": [
+        "weather"
+      ],
+      "camera": "camera_raw",
+      "event_id": null,
+      "snapshot": "weather/20260317_104640_scene_camera_raw.jpg",
+      "clip": null,
+      "source": "backfill_scene"
+    },
+    {
+      "timestamp": "20260317_104538",
+      "label": "scene",
+      "score": null,
+      "categories": [
+        "weather"
+      ],
+      "camera": "camera_raw",
+      "event_id": null,
+      "snapshot": "weather/20260317_104538_scene_camera_raw.jpg",
+      "clip": null,
+      "source": "backfill_scene"
+    },
+    {
+      "timestamp": "20260317_104438",
+      "label": "scene",
+      "score": null,
+      "categories": [
+        "weather"
+      ],
+      "camera": "camera_raw",
+      "event_id": null,
+      "snapshot": "weather/20260317_104438_scene_camera_raw.jpg",
+      "clip": null,
+      "source": "backfill_scene"
+    },
+    {
+      "timestamp": "20260317_102412",
+      "label": "scene",
+      "score": null,
+      "categories": [
+        "weather"
+      ],
+      "camera": "camera_raw",
+      "event_id": null,
+      "snapshot": "weather/20260317_102412_scene_camera_raw.jpg",
+      "clip": null,
+      "source": "backfill_scene"
+    },
+    {
+      "timestamp": "20260317_102410",
+      "label": "scene",
+      "score": null,
+      "categories": [
+        "weather"
+      ],
+      "camera": "camera_raw",
+      "event_id": null,
+      "snapshot": "weather/20260317_102410_scene_camera_raw.jpg",
+      "clip": null,
+      "source": "backfill_scene"
+    },
+    {
       "timestamp": "20260317_095022",
       "label": "scene",
       "score": null,
@@ -11311,5 +11389,5 @@
       "source": "backfill"
     }
   ],
-  "updated": "2026-03-29T00:19:03.294657"
+  "updated": "2026-03-29T00:50:46.705948"
 }

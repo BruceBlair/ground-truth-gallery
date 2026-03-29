@@ -33,11 +33,19 @@
   <main>
     <div id="stats-bar" class="stats-bar"></div>
 
-    <nav id="category-tabs" class="category-tabs"></nav>
+    <div class="toolbar">
+      <nav id="category-tabs" class="category-tabs"></nav>
+      <div id="sort-controls" class="sort-controls">
+        <button class="sort-btn active" data-sort="score">✨ Best Shot</button>
+        <button class="sort-btn" data-sort="newest">🕐 Newest</button>
+      </div>
+    </div>
 
     <div id="media-grid" class="media-grid">
       <div class="loading"></div>
     </div>
+
+    <div id="timelapse-grid" class="timelapse-grid hidden"></div>
   </main>
 
   <div id="lightbox" class="lightbox hidden">

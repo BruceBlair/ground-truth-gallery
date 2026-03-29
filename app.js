@@ -1,19 +1,10 @@
 // ── Config — edit these before deploying ────────────────────────────────────
 const CONFIG = {
-  // Path to manifest.json (relative when files are committed alongside highlights)
-  manifestUrl: './manifest.json',
-
-  // Base path for media files (same dir as manifest by default)
-  mediaBase: './',
-
-  // HLS stream URL from MediaMTX on your NAS.
-  // Works on your local network. For public access, set up Cloudflare Tunnel
-  // and replace this with your tunnel URL, e.g.:
-  //   https://your-tunnel.trycloudflare.com/trackmix_wide/index.m3u8
-  streamUrl: 'http://192.168.100.202:8888/trackmix_wide/index.m3u8',
-
-  // How often to re-fetch manifest.json (ms)
-  refreshMs: 60_000,
+  manifestUrl:          './manifest.json',
+  timelapseManifestUrl: './timelapse_manifest.json',
+  mediaBase:  './',
+  streamUrl:  'http://192.168.100.202:8888/trackmix_wide/index.m3u8',
+  refreshMs:  60_000,
 };
 
 // ── Label display metadata ───────────────────────────────────────────────────
@@ -46,11 +37,12 @@ function labelMeta(label) {
 
 // ── Tab definitions ───────────────────────────────────────────────────────────
 const TABS = [
-  { id: 'all',                icon: '📷', label: 'All'     },
-  { id: 'wildlife',           icon: '🦌', label: 'Wildlife'},
-  { id: 'weather',            icon: '⛈️', label: 'Weather' },
-  { id: 'golden_hour/sunrise',icon: '🌅', label: 'Sunrise' },
-  { id: 'golden_hour/sunset', icon: '🌇', label: 'Sunset'  },
+  { id: 'all',                icon: '📷', label: 'All'        },
+  { id: 'wildlife',           icon: '🦌', label: 'Wildlife'   },
+  { id: 'weather',            icon: '⛈️', label: 'Weather'    },
+  { id: 'golden_hour/sunrise',icon: '🌅', label: 'Sunrise'    },
+  { id: 'golden_hour/sunset', icon: '🌇', label: 'Sunset'     },
+  { id: '__timelapse__',      icon: '🎬', label: 'Timelapses' },
 ];
 
 // ── Timestamp helpers ─────────────────────────────────────────────────────────
@@ -94,15 +86,18 @@ function badgeFor(cat) {
 }
 
 // ── State ─────────────────────────────────────────────────────────────────────
-let allEntries      = [];
-let filteredEntries = [];
-let activeTab       = 'all';
-let lbIndex         = 0;
-let streamOpen      = false;
-let hls             = null;
+let allEntries        = [];
+let filteredEntries   = [];
+let timelapseEntries  = [];
+let activeTab         = 'all';
+let sortMode          = 'score';   // 'score' | 'newest'
+let lbIndex           = 0;
+let streamOpen        = false;
+let hls               = null;
 
 // ── DOM refs ──────────────────────────────────────────────────────────────────
 const $grid         = document.getElementById('media-grid');
+const $tlGrid       = document.getElementById('timelapse-grid');
 const $tabs         = document.getElementById('category-tabs');
 const $stats        = document.getElementById('stats-bar');
 const $lightbox     = document.getElementById('lightbox');
@@ -114,7 +109,7 @@ const $liveVideo    = document.getElementById('live-video');
 const $streamStatus = document.getElementById('stream-status');
 const $streamToggle = document.getElementById('stream-toggle');
 
-// ── Manifest ──────────────────────────────────────────────────────────────────
+// ── Manifests ─────────────────────────────────────────────────────────────────
 async function loadManifest() {
   try {
     const res = await fetch(CONFIG.manifestUrl + '?_=' + Date.now());
@@ -130,11 +125,28 @@ async function loadManifest() {
   }
 }
 
+async function loadTimelapseManifest() {
+  try {
+    const res = await fetch(CONFIG.timelapseManifestUrl + '?_=' + Date.now());
+    if (!res.ok) return;   // file doesn't exist yet — silent
+    const data = await res.json();
+    timelapseEntries = data.entries ?? [];
+  } catch (_) {}
+}
+
 // ── Render ────────────────────────────────────────────────────────────────────
 function render() {
   renderStats();
   renderTabs();
-  renderGrid();
+  if (activeTab === '__timelapse__') {
+    $grid.classList.add('hidden');
+    $tlGrid.classList.remove('hidden');
+    renderTimelapseGrid();
+  } else {
+    $tlGrid.classList.add('hidden');
+    $grid.classList.remove('hidden');
+    renderGrid();
+  }
 }
 
 function renderStats() {
@@ -158,9 +170,10 @@ function renderStats() {
 
 function renderTabs() {
   $tabs.innerHTML = TABS.map(t => {
-    const n = t.id === 'all'
-      ? allEntries.length
-      : allEntries.filter(e => matchesTab(e, t.id)).length;
+    let n;
+    if (t.id === '__timelapse__') n = timelapseEntries.length;
+    else if (t.id === 'all')      n = allEntries.length;
+    else                          n = allEntries.filter(e => matchesTab(e, t.id)).length;
     return `<button class="tab${t.id === activeTab ? ' active' : ''}" data-cat="${t.id}">
       ${t.icon} ${t.label}<span class="tab-n">${n}</span>
     </button>`;
@@ -172,6 +185,17 @@ function renderTabs() {
 
 function renderGrid() {
   filteredEntries = allEntries.filter(e => matchesTab(e, activeTab));
+
+  // Sort
+  if (sortMode === 'score') {
+    filteredEntries = [...filteredEntries].sort(
+      (a, b) => (b.nice_shot ?? -1) - (a.nice_shot ?? -1)
+    );
+  } else {
+    filteredEntries = [...filteredEntries].sort(
+      (a, b) => (b.timestamp ?? '').localeCompare(a.timestamp ?? '')
+    );
+  }
 
   if (!filteredEntries.length) {
     $grid.innerHTML = '<div class="empty">No highlights in this category yet.</div>';
@@ -187,10 +211,14 @@ function renderGrid() {
     const thumb = snap
       ? `<img class="card-thumb" src="${snap}" alt="${name}" loading="lazy">`
       : `<div class="card-thumb-ph">${icon}</div>`;
+    const scorePill = e.nice_shot != null
+      ? `<div class="score-pill">★ ${e.nice_shot.toFixed(0)}</div>`
+      : '';
     return `<div class="media-card" data-i="${i}">
       ${thumb}
       <div class="card-badges"><span class="badge ${cls}">${text}</span></div>
       ${e.clip ? '<div class="card-clip">▶ clip</div>' : ''}
+      ${scorePill}
       <div class="card-body">
         <div class="card-label">${icon} ${name} ${scoreStr}</div>
         <div class="card-time">${timeAgo(e.timestamp)} &middot; ${formatTs(e.timestamp)}</div>
@@ -202,6 +230,50 @@ function renderGrid() {
     card.addEventListener('click', () => openLightbox(+card.dataset.i))
   );
 }
+
+// ── Timelapse grid ────────────────────────────────────────────────────────────
+function renderTimelapseGrid() {
+  if (!timelapseEntries.length) {
+    $tlGrid.innerHTML = `<div class="empty">
+      No timelapses yet — they build automatically once a golden hour session
+      accumulates 3+ frames. Run <code>timelapse_builder.py</code> to generate them.
+    </div>`;
+    return;
+  }
+
+  $tlGrid.innerHTML = timelapseEntries.map(tl => {
+    const icon  = tl.type === 'sunrise' ? '🌅' : '🌇';
+    const label = tl.type === 'sunrise' ? 'Sunrise' : 'Sunset';
+    const thumb = tl.thumbnail ? CONFIG.mediaBase + tl.thumbnail : null;
+    const video = CONFIG.mediaBase + tl.video;
+    const d     = new Date(tl.date + 'T12:00:00');
+    const dateStr = d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+
+    return `<div class="tl-card">
+      <video class="tl-video" src="${video}"
+        poster="${thumb || ''}"
+        controls preload="metadata" playsinline>
+      </video>
+      <div class="tl-body">
+        <div class="tl-title">
+          ${icon} ${label} Timelapse
+          <span class="tl-frames">${tl.frame_count} frames</span>
+        </div>
+        <div class="tl-meta">${dateStr}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Sort controls ─────────────────────────────────────────────────────────────
+document.querySelectorAll('.sort-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortMode = btn.dataset.sort;
+    document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    render();
+  });
+});
 
 // ── Lightbox ──────────────────────────────────────────────────────────────────
 function openLightbox(index) {
@@ -318,5 +390,6 @@ $streamToggle.addEventListener('click', () => {
 });
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
+loadTimelapseManifest();
 loadManifest();
-setInterval(loadManifest, CONFIG.refreshMs);
+setInterval(async () => { await loadTimelapseManifest(); loadManifest(); }, CONFIG.refreshMs);
