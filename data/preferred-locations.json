@@ -1,0 +1,33 @@
+{
+  "updated": "2026-07-25T00:00:00Z",
+  "note": "Proposed future GTN node sites (not live sensors). Coordinates are approximate and not yet surveyed.",
+  "locations": [
+    {
+      "id": "PROPOSED-DRAINAGE-1",
+      "label": "Lower Drainage Corridor",
+      "lat": 30.0158,
+      "lon": -98.0512,
+      "feature_type": "drainage",
+      "rationale": "Possible use: earlier warning of runoff and rising water on low ground.",
+      "coordinates_confirmed": false
+    },
+    {
+      "id": "PROPOSED-RIDGE-1",
+      "label": "West Ridge Extension",
+      "lat": 30.0158,
+      "lon": -98.0625,
+      "feature_type": "ridgeline",
+      "rationale": "Possible use: wider wind and weather coverage across the ridgelines.",
+      "coordinates_confirmed": false
+    },
+    {
+      "id": "PROPOSED-APPROACH-1",
+      "label": "Approach Corridor Overlook",
+      "lat": 30.021,
+      "lon": -98.0505,
+      "feature_type": "flight_approach",
+      "rationale": "Possible use: local wind conditions for small-aircraft approaches.",
+      "coordinates_confirmed": false
+    }
+  ]
+}
