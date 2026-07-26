@@ -324,15 +324,29 @@ footer.site-footer a {
   box-shadow: none;
 }
 
+/* Diamond drawn via a rotated ::before instead of clip-path — clip-path cuts
+   the border along with everything else outside the polygon, leaving only
+   the 4 tangent points visible (found while screenshotting this page). A
+   separate ::before can be rotated on its own without touching the ::after
+   label, which stays on the (unrotated) parent box. */
 .node-map .node-pin.kind-preferred {
-  width: 16px;
-  height: 16px;
-  border-radius: 0;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* diamond, no rotate() so the ::after label stays upright */
-  background: transparent;
-  border: 2px dashed var(--hithc-border);
+  width: 0;
+  height: 0;
+  background: none;
+  border: none;
   box-shadow: none;
-  opacity: 0.85;
+}
+
+.node-map .node-pin.kind-preferred::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--hithc-cream);
+  border: 2px dashed var(--hithc-amber-dark);
 }
 
 .node-map .node-pin::after {
@@ -375,10 +389,12 @@ footer.site-footer a {
 }
 
 .map-legend .legend-swatch.kind-preferred {
+  width: 10px;
+  height: 10px;
   border-radius: 0;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  background: transparent;
-  border: 2px dashed var(--hithc-border);
+  transform: rotate(45deg); /* no ::after content on this element, so plain rotate() is fine (unlike the map pin) */
+  background: var(--hithc-cream);
+  border: 2px dashed var(--hithc-amber-dark);
 }
 
 .contribute-banner {
