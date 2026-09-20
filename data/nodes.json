@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T13:00:02Z",
+  "updated": "2026-09-20T14:00:02Z",
   "nodes": [
     {
       "id": "HITHC-RIDGE-N",
@@ -11,16 +11,16 @@
       "camera_snapshot_url": "snapshots/HITHC-RIDGE-N-latest.jpg",
       "status": "active",
       "current": {
-        "timestamp": "2026-09-20T12:59:45Z",
-        "temp_f": 74.66,
-        "humidity_pct": 94.0,
-        "pressure_msl_inhg": 30.01,
-        "wind_speed_mph": 0.0,
-        "wind_dir_deg": 315.0,
-        "wind_gust_mph": 2.01,
+        "timestamp": "2026-09-20T13:59:43Z",
+        "temp_f": 78.26,
+        "humidity_pct": 84.0,
+        "pressure_msl_inhg": 30.03,
+        "wind_speed_mph": 2.24,
+        "wind_dir_deg": 309.0,
+        "wind_gust_mph": 7.16,
         "rain_rate_in_hr": null,
         "rain_daily_in": null,
-        "battery_pct": 72.0,
+        "battery_pct": 80.0,
         "rssi_dbm": null
       }
     },
@@ -33,10 +33,10 @@
       "has_camera": false,
       "status": "active",
       "current": {
-        "timestamp": "2026-09-20T12:59:43Z",
+        "timestamp": "2026-09-20T13:59:44Z",
         "temp_f": 76.46,
         "humidity_pct": 79.0,
-        "pressure_msl_inhg": 29.73,
+        "pressure_msl_inhg": 29.75,
         "wind_speed_mph": 0.0,
         "wind_dir_deg": 290.0,
         "wind_gust_mph": 1.79,
@@ -55,16 +55,16 @@
       "has_camera": false,
       "status": "active",
       "current": {
-        "timestamp": "2026-09-20T12:59:47Z",
-        "temp_f": 73.22,
-        "humidity_pct": 99.0,
-        "pressure_msl_inhg": 29.87,
-        "wind_speed_mph": 0.0,
-        "wind_dir_deg": 235.0,
-        "wind_gust_mph": 0.0,
+        "timestamp": "2026-09-20T13:59:48Z",
+        "temp_f": 80.06,
+        "humidity_pct": 81.0,
+        "pressure_msl_inhg": 29.88,
+        "wind_speed_mph": 1.12,
+        "wind_dir_deg": 313.0,
+        "wind_gust_mph": 4.92,
         "rain_rate_in_hr": null,
         "rain_daily_in": null,
-        "battery_pct": 72.0,
+        "battery_pct": 76.0,
         "rssi_dbm": null
       }
     }
