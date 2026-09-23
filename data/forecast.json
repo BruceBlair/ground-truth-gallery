@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T17:00:08Z",
+  "updated": "2026-09-23T18:00:07Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -8,17 +8,17 @@
   "periods": [
     {
       "number": 1,
-      "name": "Today",
-      "start": "2026-09-23T07:00:00-05:00",
+      "name": "This Afternoon",
+      "start": "2026-09-23T12:00:00-05:00",
       "end": "2026-09-23T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 96,
-      "wind_speed": "0 to 5 mph",
-      "wind_dir": "ENE",
-      "precip_pct": 9,
-      "short": "Mostly Sunny",
-      "detail": "Mostly sunny, with a high near 96. Heat index values as high as 103. East northeast wind 0 to 5 mph.",
-      "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+      "wind_speed": "5 mph",
+      "wind_dir": "ESE",
+      "precip_pct": 20,
+      "short": "Slight Chance Showers And Thunderstorms",
+      "detail": "A slight chance of showers and thunderstorms after 4pm. Partly sunny, with a high near 96. Heat index values as high as 103. East southeast wind around 5 mph. Chance of precipitation is 20%.",
+      "icon": "https://api.weather.gov/icons/land/day/tsra_sct,20?size=medium"
     },
     {
       "number": 2,
@@ -28,11 +28,11 @@
       "is_daytime": false,
       "temp_f": 73,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "ESE",
-      "precip_pct": 8,
-      "short": "Mostly Cloudy",
-      "detail": "Mostly cloudy, with a low around 73. East southeast wind 0 to 5 mph.",
-      "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium"
+      "wind_dir": "SE",
+      "precip_pct": 20,
+      "short": "Slight Chance Showers And Thunderstorms then Mostly Cloudy",
+      "detail": "A slight chance of showers and thunderstorms before 7pm. Mostly cloudy, with a low around 73. Southeast wind 0 to 5 mph. Chance of precipitation is 20%.",
+      "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20/bkn?size=medium"
     },
     {
       "number": 3,
@@ -42,11 +42,11 @@
       "is_daytime": true,
       "temp_f": 96,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "NE",
+      "wind_dir": "ENE",
       "precip_pct": 1,
-      "short": "Partly Sunny",
-      "detail": "Partly sunny, with a high near 96. Heat index values as high as 103. Northeast wind 0 to 5 mph.",
-      "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium"
+      "short": "Mostly Sunny",
+      "detail": "Mostly sunny, with a high near 96. Heat index values as high as 103. East northeast wind 0 to 5 mph.",
+      "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
     },
     {
       "number": 4,
@@ -56,10 +56,10 @@
       "is_daytime": false,
       "temp_f": 73,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "ESE",
-      "precip_pct": 3,
+      "wind_dir": "E",
+      "precip_pct": 8,
       "short": "Mostly Cloudy",
-      "detail": "Mostly cloudy, with a low around 73. East southeast wind 0 to 5 mph.",
+      "detail": "Mostly cloudy, with a low around 73. East wind 0 to 5 mph.",
       "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium"
     },
     {
