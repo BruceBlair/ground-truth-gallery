@@ -37,5 +37,15 @@
       "ppos": 513,
       "deg": 287.6
     }
-  ]
+  ],
+  "lens": {
+    "f": 1852.5845,
+    "k1": -0.0475,
+    "pitch_deg": -2.375,
+    "vig": 0.7125,
+    "yaw_scale": 0.9875,
+    "fit_cost": 0.1343,
+    "fit_from": "/home/HighlyReflective/.claude/jobs/7282de7c/tmp/timing/w1_c1",
+    "fitted": "2026-09-23T13:44:48-0500"
+  }
 }
