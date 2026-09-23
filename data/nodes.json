@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T07:00:02Z",
+  "updated": "2026-09-23T08:00:02Z",
   "nodes": [
     {
       "id": "HITHC-RIDGE-N",
@@ -11,16 +11,16 @@
       "camera_snapshot_url": "snapshots/HITHC-RIDGE-N-latest.jpg",
       "status": "active",
       "current": {
-        "timestamp": "2026-09-23T06:59:43Z",
-        "temp_f": 78.98,
-        "humidity_pct": 71.0,
-        "pressure_msl_inhg": 30.06,
-        "wind_speed_mph": 3.8,
-        "wind_dir_deg": 249.0,
-        "wind_gust_mph": 3.8,
+        "timestamp": "2026-09-23T07:59:43Z",
+        "temp_f": 78.08,
+        "humidity_pct": 77.0,
+        "pressure_msl_inhg": 30.05,
+        "wind_speed_mph": 1.12,
+        "wind_dir_deg": 234.0,
+        "wind_gust_mph": 2.68,
         "rain_rate_in_hr": null,
         "rain_daily_in": null,
-        "battery_pct": 88.0,
+        "battery_pct": 84.0,
         "rssi_dbm": null
       }
     },
@@ -33,16 +33,16 @@
       "has_camera": false,
       "status": "active",
       "current": {
-        "timestamp": "2026-09-23T06:59:42Z",
-        "temp_f": 92.12,
-        "humidity_pct": 37.0,
+        "timestamp": "2026-09-23T07:59:41Z",
+        "temp_f": 78.26,
+        "humidity_pct": 70.0,
         "pressure_msl_inhg": 29.79,
         "wind_speed_mph": 0.0,
-        "wind_dir_deg": 102.0,
-        "wind_gust_mph": 0.0,
+        "wind_dir_deg": 104.0,
+        "wind_gust_mph": 1.12,
         "rain_rate_in_hr": 0.0,
         "rain_daily_in": 0.0,
-        "battery_pct": 100.0,
+        "battery_pct": 88.0,
         "rssi_dbm": null
       }
     },
@@ -55,12 +55,12 @@
       "has_camera": false,
       "status": "active",
       "current": {
-        "timestamp": "2026-09-23T06:59:46Z",
-        "temp_f": 77.0,
-        "humidity_pct": 74.0,
+        "timestamp": "2026-09-23T07:59:47Z",
+        "temp_f": 76.46,
+        "humidity_pct": 80.0,
         "pressure_msl_inhg": 29.91,
         "wind_speed_mph": 0.0,
-        "wind_dir_deg": 309.0,
+        "wind_dir_deg": 230.0,
         "wind_gust_mph": 0.0,
         "rain_rate_in_hr": null,
         "rain_daily_in": null,
