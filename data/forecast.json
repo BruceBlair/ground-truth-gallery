@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T20:00:07Z",
+  "updated": "2026-10-01T21:00:14Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,16 +9,16 @@
     {
       "number": 1,
       "name": "This Afternoon",
-      "start": "2026-10-01T14:00:00-05:00",
+      "start": "2026-10-01T16:00:00-05:00",
       "end": "2026-10-01T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 88,
       "wind_speed": "5 mph",
-      "wind_dir": "SW",
-      "precip_pct": 95,
+      "wind_dir": "W",
+      "precip_pct": 83,
       "short": "Showers And Thunderstorms",
-      "detail": "Showers and thunderstorms. Some of the storms could produce heavy rain. Mostly cloudy. High near 88, with temperatures falling to around 82 in the afternoon. Southwest wind around 5 mph. Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible.",
-      "icon": "https://api.weather.gov/icons/land/day/tsra,100?size=medium"
+      "detail": "Showers and thunderstorms. Some of the storms could produce heavy rain. Mostly cloudy. High near 88, with temperatures falling to around 82 in the afternoon. West wind around 5 mph. Chance of precipitation is 80%. New rainfall amounts between three quarters and one inch possible.",
+      "icon": "https://api.weather.gov/icons/land/day/tsra,80?size=medium"
     },
     {
       "number": 2,
