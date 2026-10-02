@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T04:00:04Z",
+  "updated": "2026-10-02T05:00:11Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,7 +9,7 @@
     {
       "number": 1,
       "name": "Tonight",
-      "start": "2026-10-01T22:00:00-05:00",
+      "start": "2026-10-01T23:00:00-05:00",
       "end": "2026-10-02T06:00:00-05:00",
       "is_daytime": false,
       "temp_f": 70,
@@ -17,7 +17,7 @@
       "wind_dir": "",
       "precip_pct": 98,
       "short": "Showers And Thunderstorms",
-      "detail": "Showers and thunderstorms. Some of the storms could produce heavy rain. Cloudy, with a low around 70. Southeast wind around 0 mph. Chance of precipitation is 100%. New rainfall amounts between 1 and 2 inches possible.",
+      "detail": "Showers and thunderstorms. Some of the storms could produce heavy rain. Mostly cloudy, with a low around 70. Southeast wind around 0 mph. Chance of precipitation is 100%. New rainfall amounts between 1 and 2 inches possible.",
       "icon": "https://api.weather.gov/icons/land/night/tsra,100?size=medium"
     },
     {
