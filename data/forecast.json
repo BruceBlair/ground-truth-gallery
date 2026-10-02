@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T17:00:05Z",
+  "updated": "2026-10-02T18:00:06Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -8,8 +8,8 @@
   "periods": [
     {
       "number": 1,
-      "name": "Today",
-      "start": "2026-10-02T11:00:00-05:00",
+      "name": "This Afternoon",
+      "start": "2026-10-02T12:00:00-05:00",
       "end": "2026-10-02T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 79,
@@ -18,7 +18,7 @@
       "precip_pct": 77,
       "short": "Showers And Thunderstorms",
       "detail": "Showers and thunderstorms. Cloudy, with a high near 79. Northeast wind around 5 mph. Chance of precipitation is 80%. New rainfall amounts between three quarters and one inch possible.",
-      "icon": "https://api.weather.gov/icons/land/day/tsra,70/tsra,80?size=medium"
+      "icon": "https://api.weather.gov/icons/land/day/tsra,80?size=medium"
     },
     {
       "number": 2,

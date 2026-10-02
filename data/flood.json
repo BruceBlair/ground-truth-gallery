@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-02T17:00:01Z",
-  "overall_flood_risk": "normal",
+  "updated": "2026-10-02T18:00:01Z",
+  "overall_flood_risk": "warning",
   "note": "Soil-moisture thresholds are illustrative placeholders, not yet calibrated against a real flood event at this property.",
   "stations": [
     {
@@ -8,15 +8,15 @@
       "label": "North Ridge",
       "lat": 30.017359,
       "lon": -98.055174,
-      "status": "offline",
+      "status": "active",
       "soil_sensor_installed": false,
       "soil_moisture_pct": null,
       "soil_channels_pct": null,
-      "rain_rate_in_hr": 0.0,
-      "rain_daily_in": 0.07,
-      "flood_risk": "normal",
-      "flood_risk_reason": "no elevated readings",
-      "last_updated": "2026-10-02T14:07:54Z"
+      "rain_rate_in_hr": 0.9,
+      "rain_daily_in": 0.25,
+      "flood_risk": "watch",
+      "flood_risk_reason": "rain rate 0.90 in/hr",
+      "last_updated": "2026-10-02T17:59:53Z"
     },
     {
       "id": "HITHC-VALLEY-E",
@@ -25,32 +25,32 @@
       "lon": -98.053447,
       "status": "active",
       "soil_sensor_installed": true,
-      "soil_moisture_pct": 58.7,
+      "soil_moisture_pct": 59.0,
       "soil_channels_pct": [
         61.0,
-        74.0,
+        75.0,
         41.0
       ],
-      "rain_rate_in_hr": 0.0,
-      "rain_daily_in": 0.06,
-      "flood_risk": "normal",
-      "flood_risk_reason": "no elevated readings",
-      "last_updated": "2026-10-02T16:57:49Z"
+      "rain_rate_in_hr": 0.76,
+      "rain_daily_in": 0.2,
+      "flood_risk": "watch",
+      "flood_risk_reason": "rain rate 0.76 in/hr",
+      "last_updated": "2026-10-02T17:59:49Z"
     },
     {
       "id": "HITHC-RIDGE-S",
       "label": "South Ridge",
       "lat": 30.014389,
       "lon": -98.056389,
-      "status": "offline",
+      "status": "active",
       "soil_sensor_installed": false,
       "soil_moisture_pct": null,
       "soil_channels_pct": null,
-      "rain_rate_in_hr": 0.0,
-      "rain_daily_in": 0.07,
-      "flood_risk": "normal",
-      "flood_risk_reason": "no elevated readings",
-      "last_updated": "2026-10-02T14:12:47Z"
+      "rain_rate_in_hr": 1.47,
+      "rain_daily_in": 0.38,
+      "flood_risk": "warning",
+      "flood_risk_reason": "rain rate 1.47 in/hr",
+      "last_updated": "2026-10-02T17:59:48Z"
     }
   ]
 }
