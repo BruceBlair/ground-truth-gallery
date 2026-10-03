@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T03:00:01Z",
+  "updated": "2026-10-03T04:00:02Z",
   "nodes": [
     {
       "id": "HITHC-RIDGE-N",
@@ -11,16 +11,16 @@
       "camera_snapshot_url": "snapshots/HITHC-RIDGE-N-latest.jpg",
       "status": "active",
       "current": {
-        "timestamp": "2026-10-03T02:59:59Z",
+        "timestamp": "2026-10-03T03:59:59Z",
         "temp_f": 72.68,
         "humidity_pct": 99.0,
         "pressure_msl_inhg": 30.08,
-        "wind_speed_mph": 2.91,
-        "wind_dir_deg": 62.0,
-        "wind_gust_mph": 10.51,
+        "wind_speed_mph": 6.26,
+        "wind_dir_deg": 17.0,
+        "wind_gust_mph": 10.07,
         "rain_rate_in_hr": 0.0,
         "rain_daily_in": 1.45,
-        "battery_pct": 52.0,
+        "battery_pct": 48.0,
         "rssi_dbm": null
       }
     },
@@ -33,16 +33,16 @@
       "has_camera": false,
       "status": "active",
       "current": {
-        "timestamp": "2026-10-03T02:59:58Z",
+        "timestamp": "2026-10-03T03:59:58Z",
         "temp_f": 72.32,
         "humidity_pct": 99.0,
         "pressure_msl_inhg": 29.8,
         "wind_speed_mph": 0.0,
-        "wind_dir_deg": 63.0,
-        "wind_gust_mph": 1.12,
+        "wind_dir_deg": 320.0,
+        "wind_gust_mph": 2.46,
         "rain_rate_in_hr": 0.0,
         "rain_daily_in": 1.28,
-        "battery_pct": 16.0,
+        "battery_pct": 8.0,
         "rssi_dbm": null
       }
     },
@@ -55,16 +55,16 @@
       "has_camera": false,
       "status": "active",
       "current": {
-        "timestamp": "2026-10-03T02:59:54Z",
+        "timestamp": "2026-10-03T03:59:53Z",
         "temp_f": 72.68,
         "humidity_pct": 99.0,
         "pressure_msl_inhg": 29.93,
-        "wind_speed_mph": 2.68,
-        "wind_dir_deg": 63.0,
-        "wind_gust_mph": 4.25,
+        "wind_speed_mph": 1.57,
+        "wind_dir_deg": 348.0,
+        "wind_gust_mph": 4.03,
         "rain_rate_in_hr": 0.0,
         "rain_daily_in": 1.53,
-        "battery_pct": 72.0,
+        "battery_pct": 68.0,
         "rssi_dbm": null
       }
     }
