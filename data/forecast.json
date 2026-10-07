@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T16:00:03Z",
+  "updated": "2026-10-07T18:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -8,16 +8,16 @@
   "periods": [
     {
       "number": 1,
-      "name": "Today",
-      "start": "2026-10-07T07:00:00-05:00",
+      "name": "This Afternoon",
+      "start": "2026-10-07T12:00:00-05:00",
       "end": "2026-10-07T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 86,
       "wind_speed": "5 mph",
-      "wind_dir": "NNE",
+      "wind_dir": "NE",
       "precip_pct": 0,
       "short": "Sunny",
-      "detail": "Sunny, with a high near 86. North northeast wind around 5 mph.",
+      "detail": "Sunny, with a high near 86. Northeast wind around 5 mph.",
       "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
     },
     {
