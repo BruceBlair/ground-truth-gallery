@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T05:30:04Z",
+  "updated": "2026-10-08T07:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,7 +9,7 @@
     {
       "number": 1,
       "name": "Overnight",
-      "start": "2026-10-08T00:00:00-05:00",
+      "start": "2026-10-08T01:00:00-05:00",
       "end": "2026-10-08T06:00:00-05:00",
       "is_daytime": false,
       "temp_f": 65,
@@ -170,9 +170,9 @@
       "wind_speed": "0 to 5 mph",
       "wind_dir": "SSE",
       "precip_pct": 10,
-      "short": "Mostly Sunny",
-      "detail": "Mostly sunny, with a high near 90.",
-      "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+      "short": "Partly Sunny",
+      "detail": "Partly sunny, with a high near 90.",
+      "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium"
     },
     {
       "number": 13,
