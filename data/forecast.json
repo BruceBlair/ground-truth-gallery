@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T08:00:02Z",
+  "updated": "2026-10-10T09:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,7 +9,7 @@
     {
       "number": 1,
       "name": "Overnight",
-      "start": "2026-10-10T01:00:00-05:00",
+      "start": "2026-10-10T03:00:00-05:00",
       "end": "2026-10-10T06:00:00-05:00",
       "is_daytime": false,
       "temp_f": 60,
@@ -17,7 +17,7 @@
       "wind_dir": "",
       "precip_pct": 0,
       "short": "Clear",
-      "detail": "Clear, with a low around 60. Northwest wind around 0 mph.",
+      "detail": "Clear, with a low around 60. Wind around 0 mph.",
       "icon": "https://api.weather.gov/icons/land/night/skc?size=medium"
     },
     {
