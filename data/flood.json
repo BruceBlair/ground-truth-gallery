@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T18:00:01Z",
+  "updated": "2026-10-13T19:00:02Z",
   "overall_flood_risk": "normal",
   "note": "Soil-moisture thresholds are illustrative placeholders, not yet calibrated against a real flood event at this property.",
   "stations": [
@@ -25,19 +25,17 @@
       "lon": -98.053447,
       "status": "active",
       "soil_sensor_installed": true,
-      "soil_moisture_pct": 30.2,
+      "soil_moisture_pct": 49.7,
       "soil_channels_pct": [
         63.0,
-        0.0,
-        47.0,
-        0.0,
+        45.0,
         41.0
       ],
       "rain_rate_in_hr": 0.0,
       "rain_daily_in": 0.02,
       "flood_risk": "normal",
       "flood_risk_reason": "no elevated readings",
-      "last_updated": "2026-10-13T17:57:30Z"
+      "last_updated": "2026-10-13T18:53:31Z"
     },
     {
       "id": "HITHC-RIDGE-S",
