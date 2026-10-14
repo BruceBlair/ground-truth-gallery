@@ -194,8 +194,49 @@ function renderProfile(el, profile) {
   el.appendChild(svg);
 }
 
+// Progress numbers (data/weather-stats.json, push-progress.py, every 6 h).
+function statTile(value, label, note) {
+  const t = document.createElement("div");
+  t.className = "stat-tile";
+  const v = document.createElement("div"); v.className = "stat-value"; v.textContent = value;
+  const l = document.createElement("div"); l.className = "stat-label"; l.textContent = label;
+  t.append(v, l);
+  if (note) { const n = document.createElement("div"); n.className = "stat-note"; n.textContent = note; t.append(n); }
+  return t;
+}
+
+function shortDate(iso) {
+  return new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+}
+
+async function loadWeatherStats() {
+  let w;
+  try { w = await fetchJSON("/data/weather-stats.json"); } catch (e) { return; }
+  document.getElementById("stats-updated").textContent = `Updated ${formatAge(w.updated)}`;
+  const tiles = document.getElementById("weather-tiles");
+  tiles.textContent = "";
+  const wet = Object.values(w.stations).sort((a, b) => (b.wettest_day_in || 0) - (a.wettest_day_in || 0))[0];
+  tiles.append(
+    statTile(`${w.days_online}`, "days online", `since ${shortDate(w.online_since)}`),
+    statTile(w.readings.toLocaleString("en-US"), "sensor readings logged"),
+    statTile(`${w.rain_avg_in} in`, "rain recorded", "average across the stations"),
+    wet ? statTile(`${wet.wettest_day_in} in`, "wettest day", `${shortDate(wet.wettest_day)}, ${wet.label}`) : "",
+    w.record_high ? statTile(`${Math.round(w.record_high.temp_f)}°F`, "highest temperature",
+      `${shortDate(w.record_high.date)}, ${w.record_high.station}`) : "",
+    w.record_low ? statTile(`${Math.round(w.record_low.temp_f)}°F`, "lowest temperature",
+      `${shortDate(w.record_low.date)}, ${w.record_low.station}`) : "",
+  );
+  const rv = w.ridge_vs_valley_overnight;
+  if (rv && rv.nights) {
+    document.getElementById("ridge-valley-line").textContent =
+      `So far the valley and ridge overnight lows have been within 2°F of each other on ` +
+      `${rv.within_2f_nights} of ${rv.nights} nights.`;
+  }
+}
+
 async function initWeather() {
   await loadTerrain();
+  loadWeatherStats();
   refreshNodes();
   refreshForecast();
   setInterval(refreshNodes, 60000);

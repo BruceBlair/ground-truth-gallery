@@ -653,3 +653,32 @@ footer.site-footer a {
 .elev-profile .prof-line { fill: none; stroke: #5a4632; stroke-width: 2; }
 .elev-profile .prof-station { fill: #fff; stroke: #2b2620; stroke-width: 2; }
 .elev-profile .prof-label { font-size: 11px; font-weight: 700; fill: #2b2620; }
+
+/* ── Progress stat tiles (weather + sky pages) ─────────────────────────────── */
+.stat-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 0.75rem 0 1.75rem;
+}
+.stat-tile {
+  background: #fff;
+  border: 1px solid var(--hithc-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.stat-value { font-size: 1.6rem; font-weight: 800; color: var(--hithc-ink); line-height: 1.1; }
+.stat-label { font-size: 0.85rem; font-weight: 600; color: var(--hithc-brown); margin-top: 4px; }
+.stat-note { font-size: 0.75rem; color: #6b6258; margin-top: 2px; }
+
+/* ── Sky page ──────────────────────────────────────────────────────────────── */
+.sky-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; margin: 1rem 0 2rem; }
+.sky-card { background: #fff; border: 1px solid var(--hithc-border); border-radius: 10px; overflow: hidden; }
+.sky-card.view-pano { grid-column: 1 / -1; }
+.sky-card video { width: 100%; display: block; background: #000; }
+.sky-card.view-allsky video { aspect-ratio: 1 / 1; object-fit: contain; }
+.sky-card .sky-meta { padding: 10px 14px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.sky-card .sky-title { font-weight: 700; }
+.sky-card .sky-sub { font-size: 0.8rem; color: #6b6258; }
+.sky-card .sky-score { margin-left: auto; font-size: 0.75rem; font-weight: 800; color: var(--hithc-amber-dark);
+  border: 1px solid var(--hithc-amber); border-radius: 99px; padding: 1px 8px; }
