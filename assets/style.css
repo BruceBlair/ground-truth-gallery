@@ -677,6 +677,9 @@ footer.site-footer a {
 .sky-card.view-pano { grid-column: 1 / -1; }
 .sky-card video { width: 100%; display: block; background: #000; }
 .sky-card.view-allsky video { aspect-ratio: 1 / 1; object-fit: contain; }
+/* 360° strips are ~1920x220: at phone width they shrink to ~45px tall, too short for the
+   browser to draw play controls. Give them room and letterbox the strip inside. */
+.sky-card.view-pano video { min-height: 180px; object-fit: contain; cursor: pointer; }
 .sky-card .sky-meta { padding: 10px 14px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
 .sky-card .sky-title { font-weight: 700; }
 .sky-card .sky-sub { font-size: 0.8rem; color: #6b6258; }

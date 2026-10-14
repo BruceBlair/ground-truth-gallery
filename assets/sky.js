@@ -26,6 +26,12 @@ function skyCard(v) {
   if (v.poster) vid.poster = `/data/${v.poster}`;
   vid.controls = true; vid.muted = true; vid.loop = true; vid.playsInline = true;
   vid.preload = "metadata";
+  // Tap/click anywhere on the video to play or pause (thin panoramas leave little room for controls).
+  // Skip clicks on the bottom control bar so the native play button doesn't toggle twice.
+  vid.addEventListener("click", (e) => {
+    if (e.offsetY > vid.clientHeight - 48) return;
+    if (vid.paused) vid.play(); else vid.pause();
+  });
   const meta = document.createElement("div"); meta.className = "sky-meta";
   const title = document.createElement("span"); title.className = "sky-title";
   title.textContent = `${SKY_TYPES[v.type] || "Timelapse"}${v.view === "allsky" ? " · overhead" : " · 360°"}`;
