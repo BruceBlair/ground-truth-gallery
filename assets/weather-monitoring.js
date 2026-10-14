@@ -186,7 +186,7 @@ function renderProfile(el, profile) {
     const anchor = i === 0 ? "start" : i === profile.marks.length - 1 ? "end" : "middle";
     add("circle", { cx: x(p[0]), cy: y(p[1]), r: 5, class: "prof-station" });
     add("text", { x: x(p[0]), y: H - B + 15, class: "prof-label", "text-anchor": anchor }, m.label);
-    add("text", { x: x(p[0]), y: H - B + 28, class: "prof-tick", "text-anchor": anchor }, `${Math.round(p[1])} ft`);
+    add("text", { x: x(p[0]), y: H - B + 28, class: "prof-tick", "text-anchor": anchor }, `${m.ground_ft != null ? m.ground_ft : Math.round(p[1])} ft`);
   });
   add("text", { x: 4, y: T + 2, class: "prof-tick" }, "ft");
   add("text", { x: (L + W - R) / 2, y: H - 4, class: "prof-tick", "text-anchor": "middle" }, `${Math.round(maxD)} m along the line`);

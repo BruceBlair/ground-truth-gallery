@@ -19,17 +19,17 @@
   {
    "id": "HITHC-RIDGE-N",
    "label": "North Ridge",
-   "ground_ft": 1071
+   "ground_ft": 1077
   },
   {
    "id": "HITHC-VALLEY-E",
    "label": "Valley East",
-   "ground_ft": 1001
+   "ground_ft": 1000
   },
   {
    "id": "HITHC-RIDGE-S",
    "label": "South Ridge",
-   "ground_ft": 1082
+   "ground_ft": 1073
   }
  ],
  "profile": {
@@ -559,17 +559,20 @@
    {
     "id": "HITHC-RIDGE-S",
     "label": "South Ridge",
-    "d_m": 0.0
+    "d_m": 0.0,
+    "ground_ft": 1073
    },
    {
     "id": "HITHC-RIDGE-N",
     "label": "North Ridge",
-    "d_m": 350.8
+    "d_m": 350.8,
+    "ground_ft": 1077
    },
    {
     "id": "HITHC-VALLEY-E",
     "label": "Valley East",
-    "d_m": 521.8
+    "d_m": 521.8,
+    "ground_ft": 1000
    }
   ]
  }
