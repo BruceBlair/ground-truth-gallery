@@ -49,10 +49,12 @@ function fmt(value, decimals, unit) {
 // external map library — the 3 GTN stations sit within about half a mile
 // of each other, so a small equirectangular approximation centered on
 // their centroid is all that's needed to show relative position).
-function renderNodeMap(container, nodes, statusOf, labelOf, kindOf) {
+function renderNodeMap(container, nodes, statusOf, labelOf, kindOf, bounds) {
   container.innerHTML = "";
   if (!nodes.length) return;
   kindOf = kindOf || (() => "native");
+  // bounds ({south, west, north, east}): a fixed box, e.g. the terrain image's, so pins land
+  // on the right spot of a pre-rendered background. Without it the box comes from the pins.
 
   // The map's scale is set by "native"/"preferred" nodes only (property
   // scale, ~half a mile across) — "external" nodes (regional WU stations,
@@ -62,13 +64,13 @@ function renderNodeMap(container, nodes, statusOf, labelOf, kindOf) {
   const scaleNodes = nodes.filter((n) => kindOf(n) !== "external");
   const boxNodes = scaleNodes.length ? scaleNodes : nodes;
 
-  const lats = boxNodes.map((n) => n.lat);
+  const lats = bounds ? [bounds.south, bounds.north] : boxNodes.map((n) => n.lat);
   const centerLat = (Math.max(...lats) + Math.min(...lats)) / 2;
   const cosLat = Math.cos((centerLat * Math.PI) / 180);
 
-  const xs = boxNodes.map((n) => n.lon * cosLat);
-  const ys = boxNodes.map((n) => n.lat);
-  const pad = 0.15; // fractional padding so pins aren't flush with the edge
+  const xs = bounds ? [bounds.west * cosLat, bounds.east * cosLat] : boxNodes.map((n) => n.lon * cosLat);
+  const ys = bounds ? [bounds.south, bounds.north] : boxNodes.map((n) => n.lat);
+  const pad = bounds ? 0 : 0.15; // fractional padding so pins aren't flush with the edge
   const minX = Math.min(...xs), maxX = Math.max(...xs);
   const minY = Math.min(...ys), maxY = Math.max(...ys);
   const spanX = Math.max(maxX - minX, 1e-6);

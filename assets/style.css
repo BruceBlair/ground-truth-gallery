@@ -638,3 +638,18 @@ footer.site-footer a {
   border-radius: 6px;
   background: #fff;
 }
+
+/* ── Terrain map (weather page): USGS 3DEP relief behind the pins ─────────── */
+.node-map.terrain {
+  max-width: 720px;
+  background: #d8d2c0 url("/assets/terrain/terrain.jpg") center / cover no-repeat;
+}
+.map-caption { font-size: 0.8rem; color: var(--hithc-muted, #6b6258); max-width: 720px; margin-top: -0.75rem; }
+.elev-profile { max-width: 720px; margin: 0.5rem 0 1.5rem; }
+.elev-profile svg { width: 100%; height: auto; display: block; }
+.elev-profile .prof-grid { stroke: rgba(43, 38, 32, 0.12); stroke-width: 1; }
+.elev-profile .prof-tick { font-size: 11px; fill: #6b6258; }
+.elev-profile .prof-fill { fill: rgba(140, 165, 100, 0.35); }
+.elev-profile .prof-line { fill: none; stroke: #5a4632; stroke-width: 2; }
+.elev-profile .prof-station { fill: #fff; stroke: #2b2620; stroke-width: 2; }
+.elev-profile .prof-label { font-size: 11px; font-weight: 700; fill: #2b2620; }

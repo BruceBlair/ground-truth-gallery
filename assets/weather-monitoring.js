@@ -112,7 +112,7 @@ async function refreshNodes() {
     } catch (e) { /* preferred-locations.json is optional — map still works without it */ }
 
     const mapEl = document.getElementById("node-map");
-    renderNodeMap(mapEl, merged, mapStatusOf, mapLabelOf, mapKindOf);
+    renderNodeMap(mapEl, merged, mapStatusOf, mapLabelOf, mapKindOf, terrain && terrain.bounds);
 
     const grid = document.getElementById("station-grid");
     grid.textContent = "";
@@ -135,7 +135,67 @@ async function refreshForecast() {
   }
 }
 
-function initWeather() {
+// Terrain: USGS 3DEP shaded relief behind the station map + a ridge-to-valley profile.
+// Generated once by tools/make_terrain.py (the ground doesn't change).
+let terrain = null;
+
+async function loadTerrain() {
+  try {
+    terrain = await fetchJSON("/assets/terrain/terrain.json");
+  } catch (e) { return; /* optional: the plain map still works */ }
+  const mapEl = document.getElementById("node-map");
+  mapEl.classList.add("terrain");
+  const km = (terrain.width_m / 1000).toFixed(1);
+  document.getElementById("terrain-caption").textContent =
+    `Bare-earth elevation ${terrain.elev_ft.min}–${terrain.elev_ft.max} ft, ` +
+    `${terrain.contour_ft.minor} ft contours (bold every ${terrain.contour_ft.major} ft), ` +
+    `about ${km} km across, north up. Source: ${terrain.source}.`;
+  renderProfile(document.getElementById("elev-profile"), terrain.profile);
+}
+
+function renderProfile(el, profile) {
+  const pts = profile.points_m_ft;
+  if (!el || !pts || pts.length < 2) return;
+  const W = 640, H = 214, L = 48, R = 12, T = 14, B = 48;
+  const maxD = pts[pts.length - 1][0];
+  const es = pts.map((p) => p[1]);
+  const lo = Math.floor((Math.min(...es) - 10) / 20) * 20, hi = Math.ceil((Math.max(...es) + 10) / 20) * 20;
+  const x = (d) => L + (d / maxD) * (W - L - R);
+  const y = (e) => T + (1 - (e - lo) / (hi - lo)) * (H - T - B);
+  const ns = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(ns, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", "Ground elevation profile between the stations");
+  const add = (tag, attrs, text) => {
+    const n = document.createElementNS(ns, tag);
+    Object.entries(attrs).forEach(([k, v]) => n.setAttribute(k, v));
+    if (text != null) n.textContent = text;
+    svg.appendChild(n);
+    return n;
+  };
+  for (let e = lo; e <= hi; e += 20) {
+    add("line", { x1: L, x2: W - R, y1: y(e), y2: y(e), class: "prof-grid" });
+    add("text", { x: L - 6, y: y(e) + 4, class: "prof-tick", "text-anchor": "end" }, `${e}`);
+  }
+  const line = pts.map((p) => `${x(p[0]).toFixed(1)},${y(p[1]).toFixed(1)}`).join(" ");
+  add("polygon", { points: `${x(0)},${H - B} ${line} ${x(maxD)},${H - B}`, class: "prof-fill" });
+  add("polyline", { points: line, class: "prof-line" });
+  profile.marks.forEach((m, i) => {
+    const p = pts.reduce((a, b) => (Math.abs(b[0] - m.d_m) < Math.abs(a[0] - m.d_m) ? b : a));
+    const anchor = i === 0 ? "start" : i === profile.marks.length - 1 ? "end" : "middle";
+    add("circle", { cx: x(p[0]), cy: y(p[1]), r: 5, class: "prof-station" });
+    add("text", { x: x(p[0]), y: H - B + 15, class: "prof-label", "text-anchor": anchor }, m.label);
+    add("text", { x: x(p[0]), y: H - B + 28, class: "prof-tick", "text-anchor": anchor }, `${Math.round(p[1])} ft`);
+  });
+  add("text", { x: 4, y: T + 2, class: "prof-tick" }, "ft");
+  add("text", { x: (L + W - R) / 2, y: H - 4, class: "prof-tick", "text-anchor": "middle" }, `${Math.round(maxD)} m along the line`);
+  el.textContent = "";
+  el.appendChild(svg);
+}
+
+async function initWeather() {
+  await loadTerrain();
   refreshNodes();
   refreshForecast();
   setInterval(refreshNodes, 60000);
