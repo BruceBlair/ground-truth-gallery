@@ -1,10 +1,10 @@
 {
   "days_recorded": 22,
   "first_day": "20260924",
-  "panoramas": 39223,
-  "full_sky_frames": 10038,
-  "timelapses_built": 196,
-  "timelapses_featured": 16,
+  "panoramas": 39631,
+  "full_sky_frames": 10093,
+  "timelapses_built": 202,
+  "timelapses_featured": 20,
   "top": [
     {
       "date": "2026-10-12",
@@ -14,6 +14,15 @@
       "score": 81,
       "video": "sky-media/20261012_sunset_pano_cam2.mp4",
       "poster": "sky-media/20261012_sunset_pano_cam2.jpg"
+    },
+    {
+      "date": "2026-10-14",
+      "type": "sunset",
+      "view": "pano",
+      "span": "17:44\u201319:53",
+      "score": 78,
+      "video": "sky-media/20261014_sunset_pano_cam2.mp4",
+      "poster": "sky-media/20261014_sunset_pano_cam2.jpg"
     },
     {
       "date": "2026-10-13",
@@ -34,32 +43,23 @@
       "poster": "sky-media/20261009_sunrise_pano_cam2.jpg"
     },
     {
-      "date": "2026-10-12",
-      "type": "allday",
-      "view": "pano",
-      "span": "06:42\u201319:55",
-      "score": 63,
-      "video": "sky-media/20261012_allday_pano_cam2.mp4",
-      "poster": "sky-media/20261012_allday_pano_cam2.jpg"
-    },
-    {
-      "date": "2026-10-05",
-      "type": "allday",
-      "view": "pano",
-      "span": "06:37\u201320:03",
-      "score": 63,
-      "video": "sky-media/20261005_allday_pano_cam2.mp4",
-      "poster": "sky-media/20261005_allday_pano_cam2.jpg"
-    },
-    {
-      "date": "2026-10-11",
+      "date": "2026-10-14",
       "type": "sunrise",
       "view": "pano",
-      "span": "06:41\u201308:40",
-      "score": 61,
-      "video": "sky-media/20261011_sunrise_pano_cam2.mp4",
-      "poster": "sky-media/20261011_sunrise_pano_cam2.jpg"
+      "span": "06:43\u201308:42",
+      "score": 71,
+      "video": "sky-media/20261014_sunrise_pano_cam2.mp4",
+      "poster": "sky-media/20261014_sunrise_pano_cam2.jpg"
+    },
+    {
+      "date": "2026-10-14",
+      "type": "allday",
+      "view": "pano",
+      "span": "06:43\u201319:52",
+      "score": 64,
+      "video": "sky-media/20261014_allday_pano_cam2.mp4",
+      "poster": "sky-media/20261014_allday_pano_cam2.jpg"
     }
   ],
-  "updated": "2026-10-14T23:15:02Z"
+  "updated": "2026-10-15T05:15:02Z"
 }
