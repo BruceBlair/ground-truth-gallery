@@ -677,9 +677,17 @@ footer.site-footer a {
 .sky-card.view-pano { grid-column: 1 / -1; }
 .sky-card video { width: 100%; display: block; background: #000; }
 .sky-card.view-allsky video { aspect-ratio: 1 / 1; object-fit: contain; }
-/* 360° strips are ~1920x220: at phone width they shrink to ~45px tall, too short for the
-   browser to draw play controls. Give them room and letterbox the strip inside. */
-.sky-card.view-pano video { min-height: 180px; object-fit: contain; cursor: pointer; }
+/* 360° player: zoomed strip on a canvas that wraps end to end; drag to spin. */
+.pano-viewer { position: relative; height: clamp(200px, 32vw, 340px); background: #000; overflow: hidden;
+  touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.pano-viewer canvas { width: 100%; height: 100%; display: block; cursor: grab; }
+.pano-viewer canvas:active { cursor: grabbing; }
+.pano-viewer .pano-source { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.pano-viewer .pano-hint { position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%);
+  background: rgba(0,0,0,.55); color: #fff; font-size: 0.75rem; padding: 3px 10px; border-radius: 99px; pointer-events: none; }
+.pano-viewer .pano-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 56px; height: 56px; border-radius: 50%; border: 0; background: rgba(0,0,0,.6); color: #fff; font-size: 1.4rem; cursor: pointer; }
+.pano-viewer .pano-play[hidden], .pano-viewer .pano-hint[hidden] { display: none; }
 .sky-card .sky-meta { padding: 10px 14px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
 .sky-card .sky-title { font-weight: 700; }
 .sky-card .sky-sub { font-size: 0.8rem; color: #6b6258; }
