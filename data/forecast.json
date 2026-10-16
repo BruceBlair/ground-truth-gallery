@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T18:00:03Z",
+  "updated": "2026-10-16T19:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,16 +9,16 @@
     {
       "number": 1,
       "name": "This Afternoon",
-      "start": "2026-10-16T12:00:00-05:00",
+      "start": "2026-10-16T13:00:00-05:00",
       "end": "2026-10-16T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 67,
-      "wind_speed": "20 to 25 mph",
+      "wind_speed": "20 mph",
       "wind_dir": "N",
       "precip_pct": 2,
       "short": "Partly Sunny",
-      "detail": "Partly sunny, with a high near 67. North wind 20 to 25 mph, with gusts as high as 40 mph.",
-      "icon": "https://api.weather.gov/icons/land/day/wind_bkn?size=medium"
+      "detail": "Partly sunny, with a high near 67. North wind around 20 mph, with gusts as high as 40 mph.",
+      "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium"
     },
     {
       "number": 2,
