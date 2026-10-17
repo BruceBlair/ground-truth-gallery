@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T23:00:02Z",
+  "updated": "2026-10-17T00:00:02Z",
   "overall_flood_risk": "normal",
   "note": "Soil-moisture thresholds are illustrative placeholders, not yet calibrated against a real flood event at this property.",
   "stations": [
@@ -12,10 +12,10 @@
       "soil_sensor_installed": false,
       "soil_moisture_pct": null,
       "soil_channels_pct": null,
-      "rain_rate_in_hr": 0.0,
+      "rain_rate_in_hr": null,
       "rain_daily_in": 0.0,
       "flood_risk": "normal",
-      "flood_risk_reason": "no elevated readings",
+      "flood_risk_reason": "no data",
       "last_updated": "2026-10-15T05:00:30Z"
     },
     {
@@ -23,7 +23,7 @@
       "label": "Valley East",
       "lat": 30.017007,
       "lon": -98.053447,
-      "status": "stale",
+      "status": "offline",
       "soil_sensor_installed": true,
       "soil_moisture_pct": 34.2,
       "soil_channels_pct": [
@@ -47,10 +47,10 @@
       "soil_sensor_installed": false,
       "soil_moisture_pct": null,
       "soil_channels_pct": null,
-      "rain_rate_in_hr": 0.0,
+      "rain_rate_in_hr": null,
       "rain_daily_in": 0.0,
       "flood_risk": "normal",
-      "flood_risk_reason": "no elevated readings",
+      "flood_risk_reason": "no data",
       "last_updated": "2026-10-15T05:00:31Z"
     }
   ]
