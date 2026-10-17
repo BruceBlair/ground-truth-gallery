@@ -3,7 +3,7 @@
     "HITHC-RIDGE-N": {
       "label": "North Ridge",
       "online_since": "2026-06-05",
-      "readings": 1506075,
+      "readings": 1508687,
       "rain_total_in": 9.48,
       "wettest_day": "2026-07-16",
       "wettest_day_in": 2.07
@@ -11,7 +11,7 @@
     "HITHC-VALLEY-E": {
       "label": "Valley East",
       "online_since": "2026-06-20",
-      "readings": 995643,
+      "readings": 996808,
       "rain_total_in": 8.75,
       "wettest_day": "2026-07-16",
       "wettest_day_in": 1.94
@@ -19,7 +19,7 @@
     "HITHC-RIDGE-S": {
       "label": "South Ridge",
       "online_since": "2026-06-17",
-      "readings": 1312989,
+      "readings": 1315601,
       "rain_total_in": 8.49,
       "wettest_day": "2026-07-16",
       "wettest_day_in": 1.72
@@ -27,7 +27,7 @@
   },
   "online_since": "2026-06-05",
   "days_online": 133,
-  "readings": 3814707,
+  "readings": 3821096,
   "rain_avg_in": 8.91,
   "record_high": {
     "temp_f": 103.1,
@@ -35,16 +35,16 @@
     "station": "Valley East"
   },
   "record_low": {
-    "temp_f": 56.8,
-    "date": "2026-10-10",
-    "station": "South Ridge"
+    "temp_f": 54.0,
+    "date": "2026-10-17",
+    "station": "North Ridge"
   },
   "ridge_vs_valley_overnight": {
-    "nights": 87,
-    "within_2f_nights": 79,
+    "nights": 88,
+    "within_2f_nights": 80,
     "valley_colder_nights": 3,
     "valley_warmer_nights": 5,
     "median_diff_f": -0.1
   },
-  "updated": "2026-10-16T23:15:01Z"
+  "updated": "2026-10-17T05:15:02Z"
 }

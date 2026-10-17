@@ -1,10 +1,10 @@
 {
   "days_recorded": 24,
   "first_day": "20260924",
-  "panoramas": 43198,
-  "full_sky_frames": 11640,
-  "timelapses_built": 220,
-  "timelapses_featured": 22,
+  "panoramas": 43543,
+  "full_sky_frames": 11755,
+  "timelapses_built": 226,
+  "timelapses_featured": 25,
   "top": [
     {
       "date": "2026-10-12",
@@ -43,6 +43,15 @@
       "poster": "sky-media/20261013_allday_allsky_cam1.jpg"
     },
     {
+      "date": "2026-10-16",
+      "type": "sunset",
+      "view": "pano",
+      "span": "17:41\u201319:51",
+      "score": 76,
+      "video": "sky-media/20261016_sunset_pano_cam2.mp4",
+      "poster": "sky-media/20261016_sunset_pano_cam2.jpg"
+    },
+    {
       "date": "2026-10-09",
       "type": "sunrise",
       "view": "pano",
@@ -50,16 +59,7 @@
       "score": 75,
       "video": "sky-media/20261009_sunrise_pano_cam2.mp4",
       "poster": "sky-media/20261009_sunrise_pano_cam2.jpg"
-    },
-    {
-      "date": "2026-10-14",
-      "type": "sunrise",
-      "view": "pano",
-      "span": "06:43\u201308:42",
-      "score": 71,
-      "video": "sky-media/20261014_sunrise_pano_cam2.mp4",
-      "poster": "sky-media/20261014_sunrise_pano_cam2.jpg"
     }
   ],
-  "updated": "2026-10-16T23:15:01Z"
+  "updated": "2026-10-17T05:15:02Z"
 }
