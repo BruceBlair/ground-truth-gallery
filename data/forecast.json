@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T16:00:02Z",
+  "updated": "2026-10-18T17:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,15 +9,15 @@
     {
       "number": 1,
       "name": "Today",
-      "start": "2026-10-18T10:00:00-05:00",
+      "start": "2026-10-18T11:00:00-05:00",
       "end": "2026-10-18T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 73,
       "wind_speed": "5 mph",
-      "wind_dir": "ENE",
+      "wind_dir": "E",
       "precip_pct": 0,
       "short": "Sunny",
-      "detail": "Sunny, with a high near 73. East northeast wind around 5 mph.",
+      "detail": "Sunny, with a high near 73. East wind around 5 mph.",
       "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
     },
     {
@@ -40,13 +40,13 @@
       "start": "2026-10-19T06:00:00-05:00",
       "end": "2026-10-19T18:00:00-05:00",
       "is_daytime": true,
-      "temp_f": 75,
+      "temp_f": 77,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "NE",
-      "precip_pct": 0,
-      "short": "Mostly Sunny",
-      "detail": "Mostly sunny, with a high near 75. Northeast wind 0 to 5 mph.",
-      "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+      "wind_dir": "ENE",
+      "precip_pct": 2,
+      "short": "Partly Sunny",
+      "detail": "Partly sunny, with a high near 77. East northeast wind 0 to 5 mph.",
+      "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium"
     },
     {
       "number": 4,
@@ -54,12 +54,12 @@
       "start": "2026-10-19T18:00:00-05:00",
       "end": "2026-10-20T06:00:00-05:00",
       "is_daytime": false,
-      "temp_f": 55,
+      "temp_f": 56,
       "wind_speed": "0 mph",
       "wind_dir": "",
-      "precip_pct": 0,
+      "precip_pct": 1,
       "short": "Partly Cloudy",
-      "detail": "Partly cloudy, with a low around 55. East northeast wind around 0 mph.",
+      "detail": "Partly cloudy, with a low around 56. East northeast wind around 0 mph.",
       "icon": "https://api.weather.gov/icons/land/night/sct?size=medium"
     },
     {
@@ -68,12 +68,12 @@
       "start": "2026-10-20T06:00:00-05:00",
       "end": "2026-10-20T18:00:00-05:00",
       "is_daytime": true,
-      "temp_f": 80,
+      "temp_f": 82,
       "wind_speed": "0 to 5 mph",
       "wind_dir": "NE",
       "precip_pct": 0,
       "short": "Sunny",
-      "detail": "Sunny, with a high near 80. Northeast wind 0 to 5 mph.",
+      "detail": "Sunny, with a high near 82. Northeast wind 0 to 5 mph.",
       "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
     },
     {
@@ -82,12 +82,12 @@
       "start": "2026-10-20T18:00:00-05:00",
       "end": "2026-10-21T06:00:00-05:00",
       "is_daytime": false,
-      "temp_f": 56,
+      "temp_f": 57,
       "wind_speed": "0 to 5 mph",
       "wind_dir": "NE",
       "precip_pct": 0,
       "short": "Mostly Clear",
-      "detail": "Mostly clear, with a low around 56. Northeast wind 0 to 5 mph.",
+      "detail": "Mostly clear, with a low around 57. Northeast wind 0 to 5 mph.",
       "icon": "https://api.weather.gov/icons/land/night/few?size=medium"
     },
     {
