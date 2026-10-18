@@ -1,9 +1,9 @@
 {
   "days_recorded": 25,
   "first_day": "20260924",
-  "panoramas": 45154,
-  "full_sky_frames": 12469,
-  "timelapses_built": 232,
+  "panoramas": 45490,
+  "full_sky_frames": 12582,
+  "timelapses_built": 238,
   "timelapses_featured": 25,
   "top": [
     {
@@ -61,5 +61,5 @@
       "poster": "sky-media/20261009_sunrise_pano_cam2.jpg"
     }
   ],
-  "updated": "2026-10-17T23:15:01Z"
+  "updated": "2026-10-18T05:15:01Z"
 }
