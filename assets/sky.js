@@ -18,6 +18,78 @@ function skyDate(iso) {
   return new Date(d + "T12:00:00").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
 }
 
+const POINTS = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+const pointName = (deg) => POINTS[Math.round((((deg % 360) + 360) % 360) / 22.5) % 16];
+
+// Hilltop weather at a fraction of the way through the video (v.weather: t0, step_s, arrays).
+function weatherAt(wx, frac) {
+  const n = wx.temp_f.length;
+  const i = Math.min(n - 1, Math.max(0, Math.round(frac * (n - 1))));
+  const near = (arr) => { for (let k = 0; k < n; k++) for (const j of [i - k, i + k]) if (arr[j] != null) return arr[j]; return null; };
+  return { time: new Date(Date.parse(wx.t0) + i * wx.step_s * 1000),
+           temp: near(wx.temp_f), from: near(wx.wind_from_deg), mph: near(wx.wind_mph) };
+}
+
+// Compass band along the top of one turn of the strip: panoramas are north at the left edge,
+// so bearing b sits at b/360 of the width. Drawn per tile so it scrolls with the picture.
+function drawCompass(ctx, x, w, wind) {
+  ctx.fillStyle = "rgba(0,0,0,0.45)"; ctx.fillRect(x, 0, w, 22);
+  ctx.strokeStyle = "rgba(255,255,255,0.8)"; ctx.fillStyle = "#fff"; ctx.lineWidth = 1;
+  ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  for (let b = 0; b < 360; b += 15) {
+    const bx = Math.round(x + (b / 360) * w) + 0.5;
+    const major = b % 45 === 0;
+    ctx.beginPath(); ctx.moveTo(bx, 22); ctx.lineTo(bx, major ? 14 : 18); ctx.stroke();
+    if (major) {
+      ctx.font = b % 90 === 0 ? "bold 12px system-ui, sans-serif" : "11px system-ui, sans-serif";
+      ctx.fillText(POINTS[b / 22.5], bx, 7);
+    }
+  }
+  if (wind && wind.from != null && wind.mph >= 1) {   // where the wind is coming from
+    const wx = x + (wind.from / 360) * w;
+    ctx.fillStyle = "#7fd4ff";
+    ctx.beginPath(); ctx.moveTo(wx - 6, 23); ctx.lineTo(wx + 6, 23); ctx.lineTo(wx, 33); ctx.closePath(); ctx.fill();
+  }
+}
+
+// Readout box (top left, under the compass band): time, temperature, and a small dial with the wind arrow (pointing the way the
+// air moves) and a wedge for the direction the viewer is facing.
+function drawReadout(ctx, top, wind, facing) {
+  const r = 17;
+  const lines = [];
+  if (wind.time) lines.push(wind.time.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" }));
+  if (wind.temp != null) lines.push(`${Math.round(wind.temp)}°F`);
+  lines.push(wind.mph == null ? "wind —" : wind.mph < 1 ? "wind calm"
+    : `wind ${Math.round(wind.mph)} mph from ${pointName(wind.from)}`);
+  ctx.font = "13px system-ui, sans-serif";
+  const tw = Math.max(...lines.map((l) => ctx.measureText(l).width));
+  const bw = 2 * r + 34 + tw, bh = Math.max(2 * r + 12, lines.length * 17 + 10);
+  const cx = 12 + r, cy = top + bh / 2;
+  ctx.fillStyle = "rgba(0,0,0,0.55)";
+  ctx.beginPath(); ctx.roundRect(6, top, bw, bh, 8); ctx.fill();
+  ctx.strokeStyle = "rgba(255,255,255,0.7)"; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.arc(cx, cy, r, 0, 2 * Math.PI); ctx.stroke();
+  ctx.fillStyle = "#fff"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  ctx.font = "bold 9px system-ui, sans-serif"; ctx.fillText("N", cx, cy - r + 6);
+  const ang = (deg) => ((deg - 90) * Math.PI) / 180;   // compass bearing -> canvas angle
+  if (facing != null) {
+    ctx.fillStyle = "rgba(255,255,255,0.4)";
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, r - 1, ang(facing - 25), ang(facing + 25)); ctx.closePath(); ctx.fill();
+  }
+  if (wind.from != null && wind.mph >= 1) {
+    const to = ang(wind.from + 180), tail = ang(wind.from);
+    const hx = cx + Math.cos(to) * (r - 4), hy = cy + Math.sin(to) * (r - 4);
+    ctx.strokeStyle = "#7fd4ff"; ctx.fillStyle = "#7fd4ff"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(cx + Math.cos(tail) * (r - 4), cy + Math.sin(tail) * (r - 4)); ctx.lineTo(hx, hy); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(hx, hy);
+    ctx.lineTo(hx - Math.cos(to - 0.5) * 7, hy - Math.sin(to - 0.5) * 7);
+    ctx.lineTo(hx - Math.cos(to + 0.5) * 7, hy - Math.sin(to + 0.5) * 7); ctx.closePath(); ctx.fill();
+  }
+  ctx.fillStyle = "#fff"; ctx.textAlign = "left"; ctx.font = "13px system-ui, sans-serif";
+  const y0 = cy - ((lines.length - 1) * 17) / 2;
+  lines.forEach((l, k) => ctx.fillText(l, 2 * r + 24, y0 + k * 17));
+}
+
 // 360° panorama player: the strip is drawn on a canvas at a zoomed height and tiled so the
 // right edge meets the left. Drag or swipe to spin it in either direction forever; it drifts
 // slowly on its own until touched. Tap (without dragging) plays or pauses.
@@ -40,6 +112,7 @@ function panoViewer(v) {
   wrap.append(canvas, vid, hint, btn);
 
   const ctx = canvas.getContext("2d");
+  const compass = v.cam === 2;   // only cam 2's panoramas are verified north-aligned against the sun
   let offset = 0;            // CSS px the view has turned
   let velocity = 0;          // px per frame, for the coast after a swipe
   let drift = 0.25;          // gentle auto-pan until the viewer touches it
@@ -65,6 +138,13 @@ function panoViewer(v) {
     const w = sw * (ch / sh);              // width of one full turn at this zoom
     const start = -(((offset % w) + w) % w);
     for (let x = start; x < cw; x += w) ctx.drawImage(img, Math.floor(x), 0, Math.ceil(w) + 1, ch);  // +1 px hides the seam line
+    const frac = img === vid && vid.duration ? vid.currentTime / vid.duration : 0;
+    const wind = v.weather ? weatherAt(v.weather, frac) : null;
+    if (compass) for (let x = start; x < cw; x += w) drawCompass(ctx, x, w, wind);
+    if (wind) {
+      const facing = (((offset + cw / 2) % w + w) % w) / w * 360;   // bearing at the middle of the view
+      drawReadout(ctx, compass ? 30 : 6, wind, compass ? facing : null);
+    }
   }
 
   function frame() {
