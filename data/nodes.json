@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T08:00:02Z",
+  "updated": "2026-10-20T09:00:02Z",
   "nodes": [
     {
       "id": "HITHC-RIDGE-N",
@@ -11,16 +11,16 @@
       "camera_snapshot_url": "snapshots/HITHC-RIDGE-N-latest.jpg",
       "status": "active",
       "current": {
-        "timestamp": "2026-10-20T07:59:37Z",
-        "temp_f": 60.8,
-        "humidity_pct": 75.0,
+        "timestamp": "2026-10-20T08:59:37Z",
+        "temp_f": 59.9,
+        "humidity_pct": 81.0,
         "pressure_msl_inhg": 30.25,
         "wind_speed_mph": 0.0,
-        "wind_dir_deg": 214.0,
-        "wind_gust_mph": 1.12,
+        "wind_dir_deg": 208.0,
+        "wind_gust_mph": 1.57,
         "rain_rate_in_hr": null,
         "rain_daily_in": null,
-        "battery_pct": 84.0,
+        "battery_pct": 80.0,
         "rssi_dbm": null
       }
     },
@@ -33,16 +33,16 @@
       "has_camera": false,
       "status": "active",
       "current": {
-        "timestamp": "2026-10-20T07:59:33Z",
-        "temp_f": 55.94,
-        "humidity_pct": 82.0,
+        "timestamp": "2026-10-20T08:58:35Z",
+        "temp_f": 55.58,
+        "humidity_pct": 85.0,
         "pressure_msl_inhg": 29.98,
         "wind_speed_mph": 0.0,
-        "wind_dir_deg": 135.0,
+        "wind_dir_deg": 283.0,
         "wind_gust_mph": 0.0,
         "rain_rate_in_hr": null,
         "rain_daily_in": null,
-        "battery_pct": 84.0,
+        "battery_pct": 80.0,
         "rssi_dbm": null
       }
     },
@@ -55,12 +55,12 @@
       "has_camera": false,
       "status": "active",
       "current": {
-        "timestamp": "2026-10-20T07:59:37Z",
-        "temp_f": 59.18,
-        "humidity_pct": 79.0,
-        "pressure_msl_inhg": 30.09,
+        "timestamp": "2026-10-20T08:59:37Z",
+        "temp_f": 57.92,
+        "humidity_pct": 85.0,
+        "pressure_msl_inhg": 30.08,
         "wind_speed_mph": 0.0,
-        "wind_dir_deg": 212.0,
+        "wind_dir_deg": 117.0,
         "wind_gust_mph": 0.0,
         "rain_rate_in_hr": null,
         "rain_daily_in": null,
