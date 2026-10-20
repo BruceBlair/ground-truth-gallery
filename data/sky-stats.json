@@ -1,9 +1,9 @@
 {
   "days_recorded": 27,
   "first_day": "20260924",
-  "panoramas": 48268,
-  "full_sky_frames": 13753,
-  "timelapses_built": 253,
+  "panoramas": 49033,
+  "full_sky_frames": 14115,
+  "timelapses_built": 256,
   "timelapses_featured": 29,
   "top": [
     {
@@ -1083,5 +1083,5 @@
       }
     }
   ],
-  "updated": "2026-10-19T17:15:01Z"
+  "updated": "2026-10-19T23:15:01Z"
 }
