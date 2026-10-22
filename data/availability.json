@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T05:05:02Z",
+  "updated": "2026-10-22T05:05:04Z",
   "coverage_phases": [
     {
       "start": "2026-03-10",
@@ -1104,7 +1104,7 @@
     "2026-07-23": {
       "photos": false,
       "weather": true,
-      "video_continuous": true,
+      "video_continuous": false,
       "video_events": true,
       "video_founding": false,
       "timelapse": false
@@ -1667,7 +1667,7 @@
       "video_continuous": true,
       "video_events": true,
       "video_founding": false,
-      "timelapse": false
+      "timelapse": true
     },
     "2026-10-02": {
       "photos": false,
@@ -1675,7 +1675,7 @@
       "video_continuous": true,
       "video_events": true,
       "video_founding": false,
-      "timelapse": false
+      "timelapse": true
     },
     "2026-10-03": {
       "photos": false,
@@ -1819,9 +1819,17 @@
       "video_continuous": true,
       "video_events": true,
       "video_founding": false,
-      "timelapse": false
+      "timelapse": true
     },
     "2026-10-21": {
+      "photos": false,
+      "weather": true,
+      "video_continuous": true,
+      "video_events": true,
+      "video_founding": false,
+      "timelapse": false
+    },
+    "2026-10-22": {
       "photos": false,
       "weather": true,
       "video_continuous": true,
