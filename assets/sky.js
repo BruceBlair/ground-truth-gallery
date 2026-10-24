@@ -251,6 +251,9 @@ async function loadSky() {
   const grid = document.getElementById("sky-grid");
   grid.textContent = "";
   (s.top || []).forEach((v) => grid.appendChild(skyCard(v)));
+  const row = document.getElementById("sky-allsky-row");
+  row.textContent = "";
+  (s.allsky_row || []).forEach((v) => row.appendChild(skyCard(v)));
 }
 
 document.addEventListener("DOMContentLoaded", loadSky);
