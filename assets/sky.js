@@ -52,8 +52,9 @@ function drawCompass(ctx, x, w, wind) {
   }
 }
 
-// Readout box (top left, under the compass band): time, temperature, and a small dial with the wind arrow (pointing the way the
-// air moves) and a wedge for the direction the viewer is facing.
+// Readout box (top left, under the compass band): time, temperature, and a heading-up dial: the
+// top of the dial is the way the viewer is facing, so N and the wind arrow (pointing the way the
+// air moves) turn around the rim as the view spins, always pointing at real north and downwind.
 function drawReadout(ctx, top, wind, facing) {
   const r = 17;
   const lines = [];
@@ -63,19 +64,24 @@ function drawReadout(ctx, top, wind, facing) {
     : `wind ${Math.round(wind.mph)} mph from ${pointName(wind.from)}`);
   ctx.font = "13px system-ui, sans-serif";
   const tw = Math.max(...lines.map((l) => ctx.measureText(l).width));
-  const bw = 2 * r + 34 + tw, bh = Math.max(2 * r + 12, lines.length * 17 + 10);
-  const cx = 12 + r, cy = top + bh / 2;
+  const bw = 2 * r + 46 + tw, bh = Math.max(2 * r + 12, lines.length * 17 + 10);
+  const cx = 18 + r, cy = top + bh / 2;
   ctx.fillStyle = "rgba(0,0,0,0.55)";
   ctx.beginPath(); ctx.roundRect(6, top, bw, bh, 8); ctx.fill();
   ctx.strokeStyle = "rgba(255,255,255,0.7)"; ctx.lineWidth = 1;
   ctx.beginPath(); ctx.arc(cx, cy, r, 0, 2 * Math.PI); ctx.stroke();
+  const head = facing == null ? 0 : facing;
+  const ang = (deg) => ((deg - head - 90) * Math.PI) / 180;   // compass bearing -> canvas angle, view up
+  ctx.fillStyle = "rgba(255,255,255,0.4)";                     // the view direction, fixed at the top
+  ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, r - 1, ang(head - 25), ang(head + 25)); ctx.closePath(); ctx.fill();
   ctx.fillStyle = "#fff"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
-  ctx.font = "bold 9px system-ui, sans-serif"; ctx.fillText("N", cx, cy - r + 6);
-  const ang = (deg) => ((deg - 90) * Math.PI) / 180;   // compass bearing -> canvas angle
-  if (facing != null) {
-    ctx.fillStyle = "rgba(255,255,255,0.4)";
-    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, r - 1, ang(facing - 25), ang(facing + 25)); ctx.closePath(); ctx.fill();
-  }
+  ctx.font = "bold 9px system-ui, sans-serif";
+  ctx.fillStyle = "#ff8a7a";                                    // N just outside the rim, at true north
+  ctx.fillText("N", cx + Math.cos(ang(0)) * (r + 7), cy + Math.sin(ang(0)) * (r + 7));
+  ctx.beginPath();
+  ctx.moveTo(cx + Math.cos(ang(0)) * (r - 3), cy + Math.sin(ang(0)) * (r - 3));
+  ctx.lineTo(cx + Math.cos(ang(0)) * (r + 1), cy + Math.sin(ang(0)) * (r + 1));
+  ctx.strokeStyle = "#ff8a7a"; ctx.lineWidth = 2; ctx.stroke();
   if (wind.from != null && wind.mph >= 1) {
     const to = ang(wind.from + 180), tail = ang(wind.from);
     const hx = cx + Math.cos(to) * (r - 4), hy = cy + Math.sin(to) * (r - 4);
@@ -87,7 +93,7 @@ function drawReadout(ctx, top, wind, facing) {
   }
   ctx.fillStyle = "#fff"; ctx.textAlign = "left"; ctx.font = "13px system-ui, sans-serif";
   const y0 = cy - ((lines.length - 1) * 17) / 2;
-  lines.forEach((l, k) => ctx.fillText(l, 2 * r + 24, y0 + k * 17));
+  lines.forEach((l, k) => ctx.fillText(l, 2 * r + 36, y0 + k * 17));
 }
 
 // 360° panorama player: the strip is drawn on a canvas at a zoomed height and tiled so the
