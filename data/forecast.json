@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T18:00:03Z",
+  "updated": "2026-10-24T19:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -8,8 +8,8 @@
   "periods": [
     {
       "number": 1,
-      "name": "Today",
-      "start": "2026-10-24T11:00:00-05:00",
+      "name": "This Afternoon",
+      "start": "2026-10-24T13:00:00-05:00",
       "end": "2026-10-24T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 85,
@@ -27,12 +27,12 @@
       "end": "2026-10-25T06:00:00-05:00",
       "is_daytime": false,
       "temp_f": 61,
-      "wind_speed": "5 to 10 mph",
+      "wind_speed": "0 to 10 mph",
       "wind_dir": "SE",
-      "precip_pct": 0,
-      "short": "Mostly Cloudy",
-      "detail": "Mostly cloudy, with a low around 61. Southeast wind 5 to 10 mph, with gusts as high as 25 mph.",
-      "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium"
+      "precip_pct": 1,
+      "short": "Partly Cloudy then Patchy Fog",
+      "detail": "Patchy fog after 5am. Partly cloudy, with a low around 61. Southeast wind 0 to 10 mph, with gusts as high as 25 mph.",
+      "icon": "https://api.weather.gov/icons/land/night/sct/fog?size=medium"
     },
     {
       "number": 3,
@@ -41,12 +41,12 @@
       "end": "2026-10-25T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 81,
-      "wind_speed": "5 to 10 mph",
+      "wind_speed": "0 to 10 mph",
       "wind_dir": "ESE",
-      "precip_pct": 0,
-      "short": "Mostly Cloudy",
-      "detail": "Mostly cloudy, with a high near 81. East southeast wind 5 to 10 mph, with gusts as high as 20 mph.",
-      "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium"
+      "precip_pct": 2,
+      "short": "Patchy Fog then Mostly Cloudy",
+      "detail": "Patchy fog before 8am. Mostly cloudy, with a high near 81. East southeast wind 0 to 10 mph, with gusts as high as 20 mph.",
+      "icon": "https://api.weather.gov/icons/land/day/fog/bkn?size=medium"
     },
     {
       "number": 4,
@@ -54,12 +54,12 @@
       "start": "2026-10-25T18:00:00-05:00",
       "end": "2026-10-26T06:00:00-05:00",
       "is_daytime": false,
-      "temp_f": 53,
+      "temp_f": 54,
       "wind_speed": "0 to 5 mph",
       "wind_dir": "ESE",
-      "precip_pct": 0,
+      "precip_pct": 1,
       "short": "Mostly Cloudy",
-      "detail": "Mostly cloudy, with a low around 53. East southeast wind 0 to 5 mph.",
+      "detail": "Mostly cloudy, with a low around 54. East southeast wind 0 to 5 mph.",
       "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium"
     },
     {
@@ -70,11 +70,11 @@
       "is_daytime": true,
       "temp_f": 81,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "E",
+      "wind_dir": "ENE",
       "precip_pct": 2,
-      "short": "Partly Sunny",
-      "detail": "Partly sunny, with a high near 81. East wind 0 to 5 mph.",
-      "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium"
+      "short": "Mostly Sunny",
+      "detail": "Mostly sunny, with a high near 81. East northeast wind 0 to 5 mph.",
+      "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
     },
     {
       "number": 6,
@@ -82,12 +82,12 @@
       "start": "2026-10-26T18:00:00-05:00",
       "end": "2026-10-27T06:00:00-05:00",
       "is_daytime": false,
-      "temp_f": 60,
+      "temp_f": 61,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "ESE",
-      "precip_pct": 11,
+      "wind_dir": "SE",
+      "precip_pct": 7,
       "short": "Mostly Cloudy",
-      "detail": "Mostly cloudy, with a low around 60. East southeast wind 0 to 5 mph.",
+      "detail": "Mostly cloudy, with a low around 61. Southeast wind 0 to 5 mph.",
       "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium"
     },
     {
@@ -96,13 +96,13 @@
       "start": "2026-10-27T06:00:00-05:00",
       "end": "2026-10-27T18:00:00-05:00",
       "is_daytime": true,
-      "temp_f": 78,
+      "temp_f": 79,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "ESE",
-      "precip_pct": 18,
-      "short": "Slight Chance Rain Showers",
-      "detail": "A slight chance of rain showers after 7am. Mostly cloudy, with a high near 78. East southeast wind 0 to 5 mph. Chance of precipitation is 20%.",
-      "icon": "https://api.weather.gov/icons/land/day/rain_showers,20?size=medium"
+      "wind_dir": "SE",
+      "precip_pct": 32,
+      "short": "Chance Rain Showers",
+      "detail": "A chance of rain showers after 7am. Mostly cloudy, with a high near 79. Southeast wind 0 to 5 mph. Chance of precipitation is 30%.",
+      "icon": "https://api.weather.gov/icons/land/day/rain_showers,30?size=medium"
     },
     {
       "number": 8,
@@ -110,13 +110,13 @@
       "start": "2026-10-27T18:00:00-05:00",
       "end": "2026-10-28T06:00:00-05:00",
       "is_daytime": false,
-      "temp_f": 59,
+      "temp_f": 61,
       "wind_speed": "0 to 5 mph",
       "wind_dir": "E",
-      "precip_pct": 18,
-      "short": "Slight Chance Rain Showers then Partly Cloudy",
-      "detail": "A slight chance of rain showers before 7pm. Partly cloudy, with a low around 59. East wind 0 to 5 mph. Chance of precipitation is 20%.",
-      "icon": "https://api.weather.gov/icons/land/night/rain_showers,20/sct?size=medium"
+      "precip_pct": 21,
+      "short": "Slight Chance Rain Showers then Mostly Cloudy",
+      "detail": "A slight chance of rain showers before 7pm. Mostly cloudy, with a low around 61. East wind 0 to 5 mph. Chance of precipitation is 20%.",
+      "icon": "https://api.weather.gov/icons/land/night/rain_showers,20/bkn?size=medium"
     },
     {
       "number": 9,
@@ -126,11 +126,11 @@
       "is_daytime": true,
       "temp_f": 82,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "E",
-      "precip_pct": 15,
-      "short": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
-      "detail": "A slight chance of showers and thunderstorms after 1pm. Mostly sunny, with a high near 82. East wind 0 to 5 mph. Chance of precipitation is 20%.",
-      "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,20?size=medium"
+      "wind_dir": "ESE",
+      "precip_pct": 24,
+      "short": "Partly Sunny then Slight Chance Showers And Thunderstorms",
+      "detail": "A slight chance of showers and thunderstorms after 1pm. Partly sunny, with a high near 82. East southeast wind 0 to 5 mph. Chance of precipitation is 20%.",
+      "icon": "https://api.weather.gov/icons/land/day/bkn/tsra_hi,20?size=medium"
     },
     {
       "number": 10,
@@ -138,13 +138,13 @@
       "start": "2026-10-28T18:00:00-05:00",
       "end": "2026-10-29T06:00:00-05:00",
       "is_daytime": false,
-      "temp_f": 60,
+      "temp_f": 63,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "ESE",
-      "precip_pct": 15,
-      "short": "Slight Chance Showers And Thunderstorms then Partly Cloudy",
-      "detail": "A slight chance of showers and thunderstorms before 7pm. Partly cloudy, with a low around 60. Chance of precipitation is 20%.",
-      "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20/sct?size=medium"
+      "wind_dir": "SE",
+      "precip_pct": 24,
+      "short": "Slight Chance Showers And Thunderstorms then Mostly Cloudy",
+      "detail": "A slight chance of showers and thunderstorms before 7pm. Mostly cloudy, with a low around 63. Chance of precipitation is 20%.",
+      "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20/bkn?size=medium"
     },
     {
       "number": 11,
@@ -154,11 +154,11 @@
       "is_daytime": true,
       "temp_f": 80,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "E",
-      "precip_pct": 40,
-      "short": "Chance Showers And Thunderstorms",
-      "detail": "A slight chance of rain showers between 7am and 1pm, then a chance of showers and thunderstorms. Partly sunny, with a high near 80. Chance of precipitation is 40%.",
-      "icon": "https://api.weather.gov/icons/land/day/rain_showers,20/tsra_sct,40?size=medium"
+      "wind_dir": "ESE",
+      "precip_pct": 57,
+      "short": "Rain Showers Likely",
+      "detail": "Rain showers likely after 7am. Mostly cloudy, with a high near 80. Chance of precipitation is 60%.",
+      "icon": "https://api.weather.gov/icons/land/day/rain_showers,40/rain_showers,60?size=medium"
     },
     {
       "number": 12,
@@ -166,13 +166,13 @@
       "start": "2026-10-29T18:00:00-05:00",
       "end": "2026-10-30T06:00:00-05:00",
       "is_daytime": false,
-      "temp_f": 60,
+      "temp_f": 62,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "ESE",
-      "precip_pct": 40,
-      "short": "Chance Showers And Thunderstorms",
-      "detail": "A chance of showers and thunderstorms. Mostly cloudy, with a low around 60. Chance of precipitation is 40%.",
-      "icon": "https://api.weather.gov/icons/land/night/tsra_sct,40/tsra_sct,30?size=medium"
+      "wind_dir": "SE",
+      "precip_pct": 57,
+      "short": "Rain Showers Likely",
+      "detail": "Rain showers likely. Mostly cloudy, with a low around 62. Chance of precipitation is 60%.",
+      "icon": "https://api.weather.gov/icons/land/night/rain_showers,60/rain_showers,50?size=medium"
     },
     {
       "number": 13,
@@ -180,13 +180,13 @@
       "start": "2026-10-30T06:00:00-05:00",
       "end": "2026-10-30T18:00:00-05:00",
       "is_daytime": true,
-      "temp_f": 77,
-      "wind_speed": "0 to 5 mph",
-      "wind_dir": "SE",
-      "precip_pct": 52,
-      "short": "Chance Showers And Thunderstorms",
-      "detail": "A chance of showers and thunderstorms. Mostly cloudy, with a high near 77. Chance of precipitation is 50%.",
-      "icon": "https://api.weather.gov/icons/land/day/tsra,50?size=medium"
+      "temp_f": 78,
+      "wind_speed": "5 mph",
+      "wind_dir": "ESE",
+      "precip_pct": 63,
+      "short": "Rain Showers Likely",
+      "detail": "Rain showers likely. Mostly cloudy, with a high near 78. Chance of precipitation is 60%.",
+      "icon": "https://api.weather.gov/icons/land/day/rain_showers,60?size=medium"
     },
     {
       "number": 14,
@@ -194,13 +194,13 @@
       "start": "2026-10-30T18:00:00-05:00",
       "end": "2026-10-31T06:00:00-05:00",
       "is_daytime": false,
-      "temp_f": 60,
-      "wind_speed": "0 to 5 mph",
-      "wind_dir": "SE",
-      "precip_pct": 52,
-      "short": "Chance Rain Showers",
-      "detail": "A chance of rain showers. Mostly cloudy, with a low around 60.",
-      "icon": "https://api.weather.gov/icons/land/night/rain_showers,50/rain_showers,30?size=medium"
+      "temp_f": 63,
+      "wind_speed": "5 mph",
+      "wind_dir": "ESE",
+      "precip_pct": 63,
+      "short": "Rain Showers Likely",
+      "detail": "Rain showers likely. Mostly cloudy, with a low around 63.",
+      "icon": "https://api.weather.gov/icons/land/night/rain_showers,60/rain_showers,30?size=medium"
     }
   ]
 }
