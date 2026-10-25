@@ -1,10 +1,10 @@
 {
   "days_recorded": 32,
   "first_day": "20260924",
-  "panoramas": 58731,
-  "full_sky_frames": 18215,
-  "timelapses_built": 316,
-  "timelapses_featured": 46,
+  "panoramas": 59050,
+  "full_sky_frames": 18320,
+  "timelapses_built": 322,
+  "timelapses_featured": 49,
   "top": [
     {
       "date": "2026-10-19",
@@ -2256,6 +2256,16 @@
   ],
   "allsky_row": [
     {
+      "date": "2026-10-24",
+      "type": "allday",
+      "view": "allsky",
+      "cam": 1,
+      "span": "06:50\u201319:42",
+      "score": 78,
+      "video": "sky-media/20261024_allday_allsky_cam1.mp4",
+      "poster": "sky-media/20261024_allday_allsky_cam1.jpg"
+    },
+    {
       "date": "2026-10-19",
       "type": "allday",
       "view": "allsky",
@@ -2264,16 +2274,6 @@
       "score": 77,
       "video": "sky-media/20261019_allday_allsky_cam1.mp4",
       "poster": "sky-media/20261019_allday_allsky_cam1.jpg"
-    },
-    {
-      "date": "2026-10-13",
-      "type": "allday",
-      "view": "allsky",
-      "cam": 1,
-      "span": "08:48\u201319:54",
-      "score": 77,
-      "video": "sky-media/20261013_allday_allsky_cam1.mp4",
-      "poster": "sky-media/20261013_allday_allsky_cam1.jpg"
     },
     {
       "date": "2026-10-05",
@@ -2286,5 +2286,5 @@
       "poster": "sky-media/20261005_allday_allsky_cam1.jpg"
     }
   ],
-  "updated": "2026-10-24T23:15:02Z"
+  "updated": "2026-10-25T05:15:01Z"
 }
