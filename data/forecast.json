@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T07:00:02Z",
+  "updated": "2026-10-26T08:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -169,10 +169,10 @@
       "temp_f": 81,
       "wind_speed": "0 to 5 mph",
       "wind_dir": "SSE",
-      "precip_pct": 29,
+      "precip_pct": 34,
       "short": "Chance Showers And Thunderstorms",
       "detail": "A chance of showers and thunderstorms before 1pm. Partly sunny, with a high near 81. Chance of precipitation is 30%.",
-      "icon": "https://api.weather.gov/icons/land/day/tsra_hi,30?size=medium"
+      "icon": "https://api.weather.gov/icons/land/day/tsra_sct,30?size=medium"
     },
     {
       "number": 13,
@@ -182,11 +182,11 @@
       "is_daytime": false,
       "temp_f": 63,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "SSE",
-      "precip_pct": 13,
-      "short": "Mostly Cloudy",
-      "detail": "Mostly cloudy, with a low around 63.",
-      "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium"
+      "wind_dir": "SE",
+      "precip_pct": 15,
+      "short": "Slight Chance Rain Showers then Partly Cloudy",
+      "detail": "A slight chance of rain showers between 7pm and 1am. Partly cloudy, with a low around 63. Chance of precipitation is 20%.",
+      "icon": "https://api.weather.gov/icons/land/night/rain_showers,20/sct?size=medium"
     },
     {
       "number": 14,
@@ -198,9 +198,9 @@
       "wind_speed": "0 to 5 mph",
       "wind_dir": "SSW",
       "precip_pct": 4,
-      "short": "Mostly Sunny",
-      "detail": "Mostly sunny, with a high near 85.",
-      "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+      "short": "Partly Sunny",
+      "detail": "Partly sunny, with a high near 85.",
+      "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium"
     }
   ]
 }
