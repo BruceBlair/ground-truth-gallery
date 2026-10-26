@@ -1,9 +1,9 @@
 {
-  "days_recorded": 33,
+  "days_recorded": 34,
   "first_day": "20260924",
-  "panoramas": 60964,
-  "full_sky_frames": 19131,
-  "timelapses_built": 334,
+  "panoramas": 61798,
+  "full_sky_frames": 19477,
+  "timelapses_built": 337,
   "timelapses_featured": 51,
   "top": [
     {
@@ -2286,5 +2286,5 @@
       "poster": "sky-media/20261005_allday_allsky_cam1.jpg"
     }
   ],
-  "updated": "2026-10-26T11:15:01Z"
+  "updated": "2026-10-26T17:15:01Z"
 }
