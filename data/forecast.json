@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T18:00:02Z",
+  "updated": "2026-10-29T19:00:01Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,16 +9,16 @@
     {
       "number": 1,
       "name": "This Afternoon",
-      "start": "2026-10-29T12:00:00-05:00",
+      "start": "2026-10-29T13:00:00-05:00",
       "end": "2026-10-29T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 75,
       "wind_speed": "5 mph",
       "wind_dir": "E",
-      "precip_pct": 46,
+      "precip_pct": 36,
       "short": "Chance Rain Showers",
-      "detail": "A chance of rain showers. Mostly cloudy, with a high near 75. East wind around 5 mph. Chance of precipitation is 50%. New rainfall amounts between a tenth and quarter of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/day/rain_showers,50?size=medium"
+      "detail": "A chance of rain showers. Mostly cloudy, with a high near 75. East wind around 5 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/day/rain_showers,40?size=medium"
     },
     {
       "number": 2,
