@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T00:00:02Z",
+  "updated": "2026-10-30T01:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,16 +9,16 @@
     {
       "number": 1,
       "name": "Tonight",
-      "start": "2026-10-29T18:00:00-05:00",
+      "start": "2026-10-29T19:00:00-05:00",
       "end": "2026-10-30T06:00:00-05:00",
       "is_daytime": false,
       "temp_f": 62,
       "wind_speed": "0 to 5 mph",
       "wind_dir": "E",
-      "precip_pct": 28,
-      "short": "Chance Rain Showers",
-      "detail": "A chance of rain showers. Mostly cloudy, with a low around 62. East wind 0 to 5 mph. Chance of precipitation is 30%.",
-      "icon": "https://api.weather.gov/icons/land/night/rain_showers,30/rain_showers,20?size=medium"
+      "precip_pct": 19,
+      "short": "Slight Chance Rain Showers",
+      "detail": "A slight chance of rain showers. Mostly cloudy, with a low around 62. East wind 0 to 5 mph. Chance of precipitation is 20%.",
+      "icon": "https://api.weather.gov/icons/land/night/rain_showers,20?size=medium"
     },
     {
       "number": 2,
