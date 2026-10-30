@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T21:30:04Z",
+  "updated": "2026-10-30T23:00:06Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,16 +9,16 @@
     {
       "number": 1,
       "name": "This Afternoon",
-      "start": "2026-10-30T16:00:00-05:00",
+      "start": "2026-10-30T17:00:00-05:00",
       "end": "2026-10-30T18:00:00-05:00",
       "is_daytime": true,
-      "temp_f": 70,
-      "wind_speed": "5 mph",
-      "wind_dir": "ENE",
-      "precip_pct": 70,
-      "short": "Patchy Fog",
-      "detail": "Patchy fog and showers and thunderstorms likely. Cloudy, with a high near 70. East northeast wind around 5 mph, with gusts as high as 20 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/day/tsra,70?size=medium"
+      "temp_f": 67,
+      "wind_speed": "10 mph",
+      "wind_dir": "E",
+      "precip_pct": 85,
+      "short": "Rain Showers",
+      "detail": "Rain showers. Mostly cloudy, with a high near 67. East wind around 10 mph. Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/day/rain_showers,90?size=medium"
     },
     {
       "number": 2,
@@ -26,13 +26,13 @@
       "start": "2026-10-30T18:00:00-05:00",
       "end": "2026-10-31T06:00:00-05:00",
       "is_daytime": false,
-      "temp_f": 60,
-      "wind_speed": "0 to 5 mph",
+      "temp_f": 61,
+      "wind_speed": "0 to 10 mph",
       "wind_dir": "ENE",
-      "precip_pct": 70,
-      "short": "Patchy Fog",
-      "detail": "Patchy fog and showers and thunderstorms likely before 4am, then patchy fog and a slight chance of rain showers. Mostly cloudy, with a low around 60. East northeast wind 0 to 5 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/night/tsra,70/tsra,30?size=medium"
+      "precip_pct": 85,
+      "short": "Rain Showers",
+      "detail": "Rain showers before 1am, then a chance of rain showers and patchy fog between 1am and 4am, then patchy fog and a slight chance of rain showers. Mostly cloudy, with a low around 61. East northeast wind 0 to 10 mph. Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/night/rain_showers,90/rain_showers,30?size=medium"
     },
     {
       "number": 3,
@@ -43,7 +43,7 @@
       "temp_f": 78,
       "wind_speed": "0 to 5 mph",
       "wind_dir": "NNE",
-      "precip_pct": 23,
+      "precip_pct": 19,
       "short": "Patchy Fog then Mostly Cloudy",
       "detail": "Patchy fog and a slight chance of rain showers before 10am. Mostly cloudy, with a high near 78. North northeast wind 0 to 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
       "icon": "https://api.weather.gov/icons/land/day/rain_showers,20/bkn?size=medium"
@@ -57,7 +57,7 @@
       "temp_f": 63,
       "wind_speed": "0 mph",
       "wind_dir": "",
-      "precip_pct": 7,
+      "precip_pct": 6,
       "short": "Partly Cloudy",
       "detail": "Partly cloudy, with a low around 63. North northeast wind around 0 mph.",
       "icon": "https://api.weather.gov/icons/land/night/sct?size=medium"
