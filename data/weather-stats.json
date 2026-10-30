@@ -3,31 +3,31 @@
     "HITHC-RIDGE-N": {
       "label": "North Ridge",
       "online_since": "2026-06-05",
-      "readings": 1663122,
-      "rain_total_in": 9.48,
+      "readings": 1665723,
+      "rain_total_in": 9.49,
       "wettest_day": "2026-07-16",
       "wettest_day_in": 2.07
     },
     "HITHC-VALLEY-E": {
       "label": "Valley East",
       "online_since": "2026-06-20",
-      "readings": 1066388,
-      "rain_total_in": 8.75,
+      "readings": 1068333,
+      "rain_total_in": 8.76,
       "wettest_day": "2026-07-16",
       "wettest_day_in": 1.94
     },
     "HITHC-RIDGE-S": {
       "label": "South Ridge",
       "online_since": "2026-06-17",
-      "readings": 1474747,
+      "readings": 1476754,
       "rain_total_in": 8.49,
       "wettest_day": "2026-07-16",
       "wettest_day_in": 1.72
     }
   },
   "online_since": "2026-06-05",
-  "days_online": 146,
-  "readings": 4204257,
+  "days_online": 147,
+  "readings": 4210810,
   "rain_avg_in": 8.91,
   "record_high": {
     "temp_f": 103.1,
@@ -46,5 +46,5 @@
     "valley_warmer_nights": 5,
     "median_diff_f": -0.1
   },
-  "updated": "2026-10-30T05:15:01Z"
+  "updated": "2026-10-30T11:15:02Z"
 }
