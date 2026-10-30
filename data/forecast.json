@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T20:00:03Z",
+  "updated": "2026-10-30T21:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,15 +9,15 @@
     {
       "number": 1,
       "name": "This Afternoon",
-      "start": "2026-10-30T14:00:00-05:00",
+      "start": "2026-10-30T15:00:00-05:00",
       "end": "2026-10-30T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 70,
       "wind_speed": "5 mph",
       "wind_dir": "ENE",
       "precip_pct": 86,
-      "short": "Showers And Thunderstorms",
-      "detail": "Showers and thunderstorms before 3pm, then patchy fog and showers and thunderstorms. Cloudy, with a high near 70. East northeast wind around 5 mph, with gusts as high as 20 mph. Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch possible.",
+      "short": "Patchy Fog",
+      "detail": "Patchy fog and showers and thunderstorms. Cloudy, with a high near 70. East northeast wind around 5 mph, with gusts as high as 20 mph. Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch possible.",
       "icon": "https://api.weather.gov/icons/land/day/tsra,90?size=medium"
     },
     {
