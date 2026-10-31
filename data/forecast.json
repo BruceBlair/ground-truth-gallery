@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T18:00:02Z",
+  "updated": "2026-10-31T19:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,13 +9,13 @@
     {
       "number": 1,
       "name": "This Afternoon",
-      "start": "2026-10-31T12:00:00-05:00",
+      "start": "2026-10-31T13:00:00-05:00",
       "end": "2026-10-31T18:00:00-05:00",
       "is_daytime": true,
       "temp_f": 78,
       "wind_speed": "0 mph",
       "wind_dir": "",
-      "precip_pct": 4,
+      "precip_pct": 3,
       "short": "Partly Sunny",
       "detail": "Partly sunny, with a high near 78. North northeast wind around 0 mph.",
       "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium"
