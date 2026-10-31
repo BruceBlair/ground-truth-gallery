@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T09:30:01Z",
+  "updated": "2026-10-31T11:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,15 +9,15 @@
     {
       "number": 1,
       "name": "Overnight",
-      "start": "2026-10-31T03:00:00-05:00",
+      "start": "2026-10-31T04:00:00-05:00",
       "end": "2026-10-31T06:00:00-05:00",
       "is_daytime": false,
       "temp_f": 62,
       "wind_speed": "0 mph",
       "wind_dir": "",
-      "precip_pct": 17,
+      "precip_pct": 15,
       "short": "Patchy Drizzle",
-      "detail": "Patchy drizzle and patchy fog. Cloudy, with a low around 62. North northeast wind around 0 mph. Chance of precipitation is 20%.",
+      "detail": "Patchy drizzle and patchy fog. Cloudy, with a low around 62. Northeast wind around 0 mph. Chance of precipitation is 20%.",
       "icon": "https://api.weather.gov/icons/land/night/rain,20?size=medium"
     },
     {
