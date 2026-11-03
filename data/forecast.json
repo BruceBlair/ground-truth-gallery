@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:30:39Z",
+  "updated": "2026-11-03T06:30:18Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -8,17 +8,17 @@
   "periods": [
     {
       "number": 1,
-      "name": "Tonight",
-      "start": "2026-11-02T23:00:00-06:00",
+      "name": "Overnight",
+      "start": "2026-11-03T00:00:00-06:00",
       "end": "2026-11-03T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 67,
-      "wind_speed": "5 to 10 mph",
+      "wind_speed": "5 mph",
       "wind_dir": "SSW",
       "precip_pct": 77,
-      "short": "Mostly Cloudy then Slight Chance Showers And Thunderstorms",
-      "detail": "A slight chance of showers and thunderstorms between midnight and 3am, then showers and thunderstorms. Mostly cloudy, with a low around 67. South southwest wind 5 to 10 mph, with gusts as high as 20 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/night/bkn/tsra,80?size=medium"
+      "short": "Slight Chance Showers And Thunderstorms",
+      "detail": "A slight chance of showers and thunderstorms before 3am, then showers and thunderstorms. Mostly cloudy, with a low around 67. South southwest wind around 5 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/night/tsra,80?size=medium"
     },
     {
       "number": 2,
