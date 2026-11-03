@@ -52,9 +52,9 @@ function drawCompass(ctx, x, w, wind) {
   }
 }
 
-// Readout box (top left, under the compass band): time, temperature, and a heading-up dial: the
-// top of the dial is the way the viewer is facing, so N and the wind arrow (pointing the way the
-// air moves) turn around the rim as the view spins, always pointing at real north and downwind.
+// Readout box (top left, under the compass band): time, temperature, and a north-up dial: N stays
+// at the top, the wind arrow points the way the air moves, and a wedge shows the way the viewer is
+// facing, turning around the dial as the view spins.
 function drawReadout(ctx, top, wind, facing) {
   const r = 17;
   const lines = [];
@@ -70,13 +70,14 @@ function drawReadout(ctx, top, wind, facing) {
   ctx.beginPath(); ctx.roundRect(6, top, bw, bh, 8); ctx.fill();
   ctx.strokeStyle = "rgba(255,255,255,0.7)"; ctx.lineWidth = 1;
   ctx.beginPath(); ctx.arc(cx, cy, r, 0, 2 * Math.PI); ctx.stroke();
-  const head = facing == null ? 0 : facing;
-  const ang = (deg) => ((deg - head - 90) * Math.PI) / 180;   // compass bearing -> canvas angle, view up
-  ctx.fillStyle = "rgba(255,255,255,0.4)";                     // the view direction, fixed at the top
-  ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, r - 1, ang(head - 25), ang(head + 25)); ctx.closePath(); ctx.fill();
+  const ang = (deg) => ((deg - 90) * Math.PI) / 180;           // compass bearing -> canvas angle, north up
+  if (facing != null) {                                         // the view direction, turning with the image
+    ctx.fillStyle = "rgba(255,255,255,0.4)";
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, r - 1, ang(facing - 25), ang(facing + 25)); ctx.closePath(); ctx.fill();
+  }
   ctx.fillStyle = "#fff"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
   ctx.font = "bold 9px system-ui, sans-serif";
-  ctx.fillStyle = "#ff8a7a";                                    // N just outside the rim, at true north
+  ctx.fillStyle = "#ff8a7a";                                    // N just outside the rim, at the top
   ctx.fillText("N", cx + Math.cos(ang(0)) * (r + 7), cy + Math.sin(ang(0)) * (r + 7));
   ctx.beginPath();
   ctx.moveTo(cx + Math.cos(ang(0)) * (r - 3), cy + Math.sin(ang(0)) * (r - 3));
