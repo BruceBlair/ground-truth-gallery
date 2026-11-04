@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T22:55:04Z",
+  "updated": "2026-11-03T23:55:06Z",
   "overall_flood_risk": "normal",
   "note": "Soil-moisture thresholds are illustrative placeholders, not yet calibrated against a real flood event at this property.",
   "stations": [
@@ -37,7 +37,7 @@
       "rain_daily_in": 0.22,
       "flood_risk": "normal",
       "flood_risk_reason": "no elevated readings",
-      "last_updated": "2026-11-03T22:25:54Z"
+      "last_updated": "2026-11-03T23:00:54Z"
     },
     {
       "id": "HITHC-RIDGE-S",
