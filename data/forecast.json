@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T03:30:14Z",
+  "updated": "2026-11-06T04:30:11Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,15 +9,15 @@
     {
       "number": 1,
       "name": "Tonight",
-      "start": "2026-11-05T19:00:00-06:00",
+      "start": "2026-11-05T18:00:00-06:00",
       "end": "2026-11-06T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 55,
       "wind_speed": "0 to 15 mph",
-      "wind_dir": "WNW",
+      "wind_dir": "W",
       "precip_pct": 1,
       "short": "Partly Cloudy",
-      "detail": "Partly cloudy, with a low around 55. West northwest wind 0 to 15 mph, with gusts as high as 30 mph.",
+      "detail": "Partly cloudy, with a low around 55. West wind 0 to 15 mph, with gusts as high as 30 mph.",
       "icon": "https://api.weather.gov/icons/land/night/sct?size=medium"
     },
     {
