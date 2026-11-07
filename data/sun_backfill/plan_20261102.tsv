@@ -1,0 +1,86 @@
+day_20261006_cam2_00	-3.10		raw median +11.2 at 348.4, stitched at 340.3 -> +3.1; pano read +1.82
+day_20261007_cam2_00	-4.70		raw median +12.8 at 348.4, stitched at 340.3 -> +4.7; pano read +4.09
+day_20261008_cam2_00	-4.57		raw median +12.7 at 348.4, stitched at 340.3 -> +4.6; pano read +4.39
+day_20261009_cam2_00	-3.89		raw median +12.0 at 348.4, stitched at 340.3 -> +3.9; pano read +3.54
+day_20261010_cam2_00	-4.25		raw median +12.3 at 348.4, stitched at 340.3 -> +4.2; pano read +3.55
+day_20261011_cam2_00	+10.10		raw median -2.0 at 348.4, stitched at 340.3 -> -10.1; pano read -8.52
+day_20261012_cam2_00	+10.16		cam2 10/11-10/18 spell, sun scattered; terrain shift -1.9 vs day_20261017_cam2_00, anchor -8.26 -> err -10.2
+day_20261013_cam2_00	+10.16		cam2 10/11-10/18 spell, sun scattered; terrain shift -1.9 vs day_20261017_cam2_00, anchor -8.26 -> err -10.2
+day_20261014_cam2_00	+7.86		cam2 10/11-10/18 spell, sun scattered; terrain shift +0.4 vs day_20261017_cam2_00, anchor -8.26 -> err -7.9
+day_20261015_cam2_00	+7.87		raw median +0.2 at 348.4, stitched at 340.3 -> -7.9; pano read -7.15
+day_20261016_cam1_00		perpano	pan zero wandered during the run: per-pano terrain correction
+day_20261016_cam2_00	+7.63		raw median +0.5 at 348.4, stitched at 340.3 -> -7.6; pano read -8.56
+day_20261017_cam1_00	+28.07		terrain shift -0.6 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -28.1
+day_20261017_cam2_00	+8.03		raw median +0.1 at 348.4, stitched at 340.3 -> -8.0; pano read -7.88
+day_20261018_cam1_00	+29.67		terrain shift -2.2 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.7
+day_20261018_cam2_00	+8.87		raw median -0.8 at 348.4, stitched at 340.3 -> -8.9; pano read -7.47
+day_20261019_cam1_00	+27.37		terrain shift +0.1 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.4
+day_20261020_cam1_00	+26.97		terrain shift +0.5 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.0
+day_20261021_cam1_00	+26.57		terrain shift +0.9 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -26.6
+day_20261022_cam1_00	+26.57		terrain shift +0.9 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -26.6
+day_20261023_cam1_00	+26.57		terrain shift +0.9 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -26.6
+day_20261024_cam1_00	+26.67		terrain shift +0.8 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -26.7
+day_20261025_cam1_00	+28.67		terrain shift -1.2 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -28.7
+day_20261026_cam1_00	+28.97		terrain shift -1.5 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.0
+day_20261027_cam1_00	+28.67		terrain shift -1.2 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -28.7
+day_20261028_cam1_00	+28.97		terrain shift -1.5 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.0
+day_20261029_cam1_00	+29.27		terrain shift -1.8 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.3
+day_20261030_cam1_00	+29.07		terrain shift -1.6 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.1
+day_20261031_cam1_00	+28.87		terrain shift -1.4 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -28.9
+day_20261031_cam2_00	-11.62		raw median +11.6 at 348.4, stitched at 348.4 -> +11.6; pano read +12.30
+day_20261101_cam1_00	+27.97	192	terrain start shift -0.5; presets fixed 11:09 mid-run, cycles 0000-0192 only
+sunrise_20261011_cam2	+9.75		raw median -1.7 at 348.4, stitched at 340.3 -> -9.8; pano read -9.68
+sunrise_20261012_cam2	+10.26		cam2 10/11-10/18 spell, sun scattered; terrain shift -2.0 vs day_20261017_cam2_00, anchor -8.26 -> err -10.3
+sunrise_20261013_cam2	+10.16		cam2 10/11-10/18 spell, sun scattered; terrain shift -1.9 vs day_20261017_cam2_00, anchor -8.26 -> err -10.2
+sunrise_20261014_cam2	+7.86		cam2 10/11-10/18 spell, sun scattered; terrain shift +0.4 vs day_20261017_cam2_00, anchor -8.26 -> err -7.9
+sunrise_20261015_cam2	+8.55		raw median -0.5 at 348.4, stitched at 340.3 -> -8.6; pano read -5.82
+sunrise_20261016_cam1		perpano	pan zero wandered during the run: per-pano terrain correction
+sunrise_20261016_cam2	+8.16		cam2 10/11-10/18 spell, sun scattered; terrain shift +0.1 vs day_20261017_cam2_00, anchor -8.26 -> err -8.2
+sunrise_20261017_cam1	+28.77		terrain shift -1.3 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -28.8
+sunrise_20261017_cam2	+8.80		raw median -0.7 at 348.4, stitched at 340.3 -> -8.8; pano read -9.51
+sunrise_20261018_cam1	+30.47		terrain shift -3.0 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -30.5
+sunrise_20261018_cam2	+9.48		raw median -1.4 at 348.4, stitched at 340.3 -> -9.5; pano read -9.94
+sunrise_20261019_cam1	+28.27		terrain shift -0.8 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -28.3
+sunrise_20261020_cam1	+27.87		terrain shift -0.4 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.9
+sunrise_20261021_cam1	+27.67		terrain shift -0.2 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.7
+sunrise_20261022_cam1	+27.47		terrain shift +0.0 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.5
+sunrise_20261023_cam1	+27.17		terrain shift +0.3 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.2
+sunrise_20261024_cam1	+26.97		terrain shift +0.5 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.0
+sunrise_20261025_cam1	+28.97		terrain shift -1.5 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.0
+sunrise_20261026_cam1	+29.27		terrain shift -1.8 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.3
+sunrise_20261027_cam1	+29.27		terrain shift -1.8 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.3
+sunrise_20261028_cam1	+29.17		terrain shift -1.7 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.2
+sunrise_20261029_cam1	+29.17		terrain shift -1.7 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.2
+sunrise_20261030_cam1	+29.17		terrain shift -1.7 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.2
+sunrise_20261031_cam1	+29.07		terrain shift -1.6 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.1
+sunrise_20261101_cam1	+27.97		terrain shift -0.5 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -28.0
+sunset_20261006_cam2	-5.77		raw median +13.9 at 348.4, stitched at 340.3 -> +5.8; pano read +4.98
+sunset_20261007_cam2	-6.11		pano median +6.1 IQR 1.49 n 44
+sunset_20261008_cam2	-5.53		raw median +13.6 at 348.4, stitched at 340.3 -> +5.5; pano read +3.44
+sunset_20261009_cam2	-5.32		raw median +13.4 at 348.4, stitched at 340.3 -> +5.3; pano read +4.61
+sunset_20261010_cam2	-5.29		raw median +13.4 at 348.4, stitched at 340.3 -> +5.3; pano read +4.54
+sunset_20261011_cam2	+9.64		raw median -1.5 at 348.4, stitched at 340.3 -> -9.6; pano read -9.97
+sunset_20261012_cam2	+10.26		cam2 10/11-10/18 spell, sun scattered; terrain shift -2.0 vs day_20261017_cam2_00, anchor -8.26 -> err -10.3
+sunset_20261013_cam2	+8.40		raw median -0.3 at 348.4, stitched at 340.3 -> -8.4; pano read -7.67
+sunset_20261014_cam2	+7.86		cam2 10/11-10/18 spell, sun scattered; terrain shift +0.4 vs day_20261017_cam2_00, anchor -8.26 -> err -7.9
+sunset_20261015_cam2	+7.38		raw median +0.7 at 348.4, stitched at 340.3 -> -7.4; pano read -6.52
+sunset_20261016_cam1	+28.17		terrain shift -0.7 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -28.2
+sunset_20261016_cam2	+8.10		cam2 10/11-10/18 spell default (sun scattered, terrain unusable)
+sunset_20261017_cam1	+28.37		terrain shift -0.9 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -28.4
+sunset_20261017_cam2	+7.93		raw median +0.2 at 348.4, stitched at 340.3 -> -7.9; pano read -7.80
+sunset_20261018_cam1	+30.27		terrain shift -2.8 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -30.3
+sunset_20261018_cam2	+8.96		cam2 10/11-10/18 spell, sun scattered; terrain shift -0.7 vs day_20261017_cam2_00, anchor -8.26 -> err -9.0
+sunset_20261019_cam1	+27.97		terrain shift -0.5 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -28.0
+sunset_20261020_cam1	+27.47		terrain shift +0.0 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.5
+sunset_20261021_cam1	+27.17		terrain shift +0.3 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.2
+sunset_20261022_cam1	+26.97		terrain shift +0.5 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.0
+sunset_20261023_cam1	+27.07		terrain shift +0.4 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.1
+sunset_20261024_cam1	+26.97		terrain shift +0.5 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -27.0
+sunset_20261025_cam1	+29.07		terrain shift -1.6 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.1
+sunset_20261026_cam1	+29.17		terrain shift -1.7 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.2
+sunset_20261027_cam1	+29.27		terrain shift -1.8 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.3
+sunset_20261028_cam1	+29.47		terrain shift -2.0 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.5
+sunset_20261029_cam1	+29.07		terrain shift -1.6 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.1
+sunset_20261030_cam1	+29.17		terrain shift -1.7 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.2
+sunset_20261031_cam1	+29.17		terrain shift -1.7 vs sunset_20261020_cam1, anchor -27.47 from 36 sun-measured runs -> err -29.2
+sunset_20261031_cam2	-12.75		raw median +12.7 at 348.4, stitched at 348.4 -> +12.7; pano read +13.11
