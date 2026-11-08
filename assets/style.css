@@ -695,3 +695,14 @@ footer.site-footer a {
 .sky-card .sky-sub { font-size: 0.8rem; color: #6b6258; }
 .sky-card .sky-score { margin-left: auto; font-size: 0.75rem; font-weight: 800; color: var(--hithc-amber-dark);
   border: 1px solid var(--hithc-amber); border-radius: 99px; padding: 1px 8px; }
+
+.lede {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.sky-views { margin: 0 0 1.5rem 1.2rem; line-height: 1.5; }
+.sky-views li { margin-bottom: 0.5rem; }
+.sky-audiences { margin-bottom: 2rem; }
+.sky-audiences .card:hover { transform: none; box-shadow: none; }
