@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T09:55:06Z",
+  "updated": "2026-11-08T11:00:01Z",
   "overall_flood_risk": "normal",
   "note": "Soil-moisture thresholds are illustrative placeholders, not yet calibrated against a real flood event at this property.",
   "stations": [
@@ -25,11 +25,8 @@
       "lon": -98.053447,
       "status": "offline",
       "soil_sensor_installed": true,
-      "soil_moisture_pct": 7.2,
+      "soil_moisture_pct": 18.0,
       "soil_channels_pct": [
-        0.0,
-        0.0,
-        0.0,
         0.0,
         36.0
       ],
