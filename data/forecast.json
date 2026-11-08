@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T05:31:34Z",
+  "updated": "2026-11-08T06:30:12Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -8,8 +8,8 @@
   "periods": [
     {
       "number": 1,
-      "name": "Tonight",
-      "start": "2026-11-07T23:00:00-06:00",
+      "name": "Overnight",
+      "start": "2026-11-08T00:00:00-06:00",
       "end": "2026-11-08T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 56,
@@ -17,8 +17,8 @@
       "wind_dir": "NE",
       "precip_pct": 79,
       "short": "Showers And Thunderstorms",
-      "detail": "Showers and thunderstorms. Cloudy, with a low around 56. Northeast wind around 10 mph, with gusts as high as 20 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/night/tsra,50/tsra,80?size=medium"
+      "detail": "Showers and thunderstorms. Cloudy, with a low around 56. Northeast wind around 10 mph, with gusts as high as 20 mph. Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/night/tsra,80?size=medium"
     },
     {
       "number": 2,
