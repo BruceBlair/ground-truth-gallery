@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T00:30:11Z",
+  "updated": "2026-11-09T01:30:13Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,16 +9,16 @@
     {
       "number": 1,
       "name": "Tonight",
-      "start": "2026-11-08T18:00:00-06:00",
+      "start": "2026-11-08T19:00:00-06:00",
       "end": "2026-11-09T06:00:00-06:00",
       "is_daytime": false,
-      "temp_f": 53,
+      "temp_f": 55,
       "wind_speed": "0 to 5 mph",
       "wind_dir": "NE",
-      "precip_pct": 84,
-      "short": "Light Rain",
-      "detail": "Rain. Mostly cloudy, with a low around 53. Northeast wind 0 to 5 mph, with gusts as high as 20 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/night/rain,80?size=medium"
+      "precip_pct": 82,
+      "short": "Rain Showers",
+      "detail": "Rain showers. Mostly cloudy, with a low around 55. Northeast wind 0 to 5 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/night/rain_showers,60/rain_showers,80?size=medium"
     },
     {
       "number": 2,
@@ -26,13 +26,13 @@
       "start": "2026-11-09T06:00:00-06:00",
       "end": "2026-11-09T18:00:00-06:00",
       "is_daytime": true,
-      "temp_f": 65,
+      "temp_f": 64,
       "wind_speed": "0 to 5 mph",
       "wind_dir": "ENE",
-      "precip_pct": 82,
-      "short": "Light Rain",
-      "detail": "Rain. Mostly cloudy, with a high near 65. East northeast wind 0 to 5 mph. Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/day/rain,80?size=medium"
+      "precip_pct": 79,
+      "short": "Rain Showers",
+      "detail": "Rain showers. Mostly cloudy, with a high near 64. East northeast wind 0 to 5 mph. Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/day/rain_showers,80/rain_showers,70?size=medium"
     },
     {
       "number": 3,
@@ -40,13 +40,13 @@
       "start": "2026-11-09T18:00:00-06:00",
       "end": "2026-11-10T06:00:00-06:00",
       "is_daytime": false,
-      "temp_f": 54,
+      "temp_f": 55,
       "wind_speed": "0 mph",
       "wind_dir": "",
       "precip_pct": 29,
-      "short": "Chance Light Rain then Mostly Cloudy",
-      "detail": "A chance of rain before midnight. Mostly cloudy, with a low around 54. Northeast wind around 0 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/night/rain,30/bkn?size=medium"
+      "short": "Chance Rain Showers then Mostly Cloudy",
+      "detail": "A chance of rain showers before midnight. Mostly cloudy, with a low around 55. Northeast wind around 0 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/night/rain_showers,30/bkn?size=medium"
     },
     {
       "number": 4,
@@ -54,13 +54,13 @@
       "start": "2026-11-10T06:00:00-06:00",
       "end": "2026-11-10T18:00:00-06:00",
       "is_daytime": true,
-      "temp_f": 70,
+      "temp_f": 71,
       "wind_speed": "0 mph",
       "wind_dir": "",
-      "precip_pct": 20,
-      "short": "Partly Sunny then Slight Chance Light Rain",
-      "detail": "A slight chance of rain after noon. Partly sunny, with a high near 70. South southeast wind around 0 mph. Chance of precipitation is 20%.",
-      "icon": "https://api.weather.gov/icons/land/day/bkn/rain,20?size=medium"
+      "precip_pct": 15,
+      "short": "Slight Chance Rain Showers then Partly Sunny",
+      "detail": "A slight chance of rain showers before noon. Partly sunny, with a high near 71. South southeast wind around 0 mph. Chance of precipitation is 20%.",
+      "icon": "https://api.weather.gov/icons/land/day/rain_showers,20/bkn?size=medium"
     },
     {
       "number": 5,
