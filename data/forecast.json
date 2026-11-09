@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T08:30:09Z",
+  "updated": "2026-11-09T10:00:02Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,15 +9,15 @@
     {
       "number": 1,
       "name": "Overnight",
-      "start": "2026-11-09T02:00:00-06:00",
+      "start": "2026-11-09T03:00:00-06:00",
       "end": "2026-11-09T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 55,
       "wind_speed": "5 mph",
-      "wind_dir": "NE",
+      "wind_dir": "ENE",
       "precip_pct": 78,
       "short": "Rain Showers",
-      "detail": "Rain showers. Cloudy, with a low around 55. Northeast wind around 5 mph. Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch possible.",
+      "detail": "Rain showers. Cloudy, with a low around 55. East northeast wind around 5 mph. Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch possible.",
       "icon": "https://api.weather.gov/icons/land/night/rain_showers,80?size=medium"
     },
     {
