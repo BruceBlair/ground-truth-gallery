@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T04:30:01Z",
+  "updated": "2026-11-09T05:30:13Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,16 +9,16 @@
     {
       "number": 1,
       "name": "Tonight",
-      "start": "2026-11-08T21:00:00-06:00",
+      "start": "2026-11-08T23:00:00-06:00",
       "end": "2026-11-09T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 55,
-      "wind_speed": "0 to 5 mph",
+      "wind_speed": "5 mph",
       "wind_dir": "NE",
-      "precip_pct": 82,
+      "precip_pct": 78,
       "short": "Rain Showers",
-      "detail": "Rain showers. Mostly cloudy, with a low around 55. Northeast wind 0 to 5 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/night/rain_showers,60/rain_showers,80?size=medium"
+      "detail": "Rain showers. Mostly cloudy, with a low around 55. Northeast wind around 5 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/night/rain_showers,30/rain_showers,80?size=medium"
     },
     {
       "number": 2,
@@ -27,12 +27,12 @@
       "end": "2026-11-09T18:00:00-06:00",
       "is_daytime": true,
       "temp_f": 64,
-      "wind_speed": "0 to 5 mph",
+      "wind_speed": "5 mph",
       "wind_dir": "ENE",
-      "precip_pct": 79,
-      "short": "Rain Showers",
-      "detail": "Rain showers. Mostly cloudy, with a high near 64. East northeast wind 0 to 5 mph. Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/day/rain_showers,80/rain_showers,70?size=medium"
+      "precip_pct": 67,
+      "short": "Rain Showers Likely",
+      "detail": "Rain showers likely. Cloudy, with a high near 64. East northeast wind around 5 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/day/rain_showers,70/rain_showers,60?size=medium"
     },
     {
       "number": 3,
@@ -41,12 +41,12 @@
       "end": "2026-11-10T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 55,
-      "wind_speed": "0 mph",
-      "wind_dir": "",
-      "precip_pct": 29,
-      "short": "Chance Rain Showers then Mostly Cloudy",
-      "detail": "A chance of rain showers before midnight. Mostly cloudy, with a low around 55. Northeast wind around 0 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
-      "icon": "https://api.weather.gov/icons/land/night/rain_showers,30/bkn?size=medium"
+      "wind_speed": "0 to 5 mph",
+      "wind_dir": "NNE",
+      "precip_pct": 25,
+      "short": "Slight Chance Rain Showers then Areas Of Fog",
+      "detail": "A slight chance of rain showers before midnight, then areas of fog. Mostly cloudy, with a low around 55. North northeast wind 0 to 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+      "icon": "https://api.weather.gov/icons/land/night/rain_showers,30/fog?size=medium"
     },
     {
       "number": 4,
@@ -58,8 +58,8 @@
       "wind_speed": "0 mph",
       "wind_dir": "",
       "precip_pct": 15,
-      "short": "Slight Chance Rain Showers then Partly Sunny",
-      "detail": "A slight chance of rain showers before noon. Partly sunny, with a high near 71. South southeast wind around 0 mph. Chance of precipitation is 20%.",
+      "short": "Patchy Fog then Partly Sunny",
+      "detail": "Patchy fog and a slight chance of rain showers before noon. Partly sunny, with a high near 71. East wind around 0 mph. Chance of precipitation is 20%.",
       "icon": "https://api.weather.gov/icons/land/day/rain_showers,20/bkn?size=medium"
     },
     {
