@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T14:30:13Z",
+  "updated": "2026-11-09T15:30:09Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,7 +9,7 @@
     {
       "number": 1,
       "name": "Today",
-      "start": "2026-11-09T06:00:00-06:00",
+      "start": "2026-11-09T09:00:00-06:00",
       "end": "2026-11-09T18:00:00-06:00",
       "is_daytime": true,
       "temp_f": 65,
@@ -17,7 +17,7 @@
       "wind_dir": "ENE",
       "precip_pct": 67,
       "short": "Rain Showers Likely",
-      "detail": "Rain showers likely. Cloudy, with a high near 65. East northeast wind around 5 mph. Chance of precipitation is 70%. New rainfall amounts between a half and three quarters of an inch possible.",
+      "detail": "Rain showers likely. Mostly cloudy, with a high near 65. East northeast wind around 5 mph. Chance of precipitation is 70%. New rainfall amounts between a half and three quarters of an inch possible.",
       "icon": "https://api.weather.gov/icons/land/day/rain_showers,70/rain_showers,60?size=medium"
     },
     {
