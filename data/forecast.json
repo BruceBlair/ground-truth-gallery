@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T05:30:12Z",
+  "updated": "2026-11-10T06:30:12Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -8,16 +8,16 @@
   "periods": [
     {
       "number": 1,
-      "name": "Tonight",
-      "start": "2026-11-09T20:00:00-06:00",
+      "name": "Overnight",
+      "start": "2026-11-10T00:00:00-06:00",
       "end": "2026-11-10T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 56,
       "wind_speed": "0 mph",
       "wind_dir": "",
-      "precip_pct": 22,
+      "precip_pct": 17,
       "short": "Slight Chance Rain Showers",
-      "detail": "A slight chance of rain showers. Mostly cloudy, with a low around 56. North northeast wind around 0 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+      "detail": "A slight chance of rain showers. Mostly cloudy, with a low around 56. Wind around 0 mph. Chance of precipitation is 20%.",
       "icon": "https://api.weather.gov/icons/land/night/rain_showers,20?size=medium"
     },
     {
