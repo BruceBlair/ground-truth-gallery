@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T21:55:11Z",
+  "updated": "2026-11-11T22:55:01Z",
   "nodes": [
     {
       "id": "HITHC-RIDGE-N",
@@ -34,15 +34,15 @@
       "status": "offline",
       "current": {
         "timestamp": "2026-11-10T21:18:35Z",
-        "temp_f": 59.18,
+        "temp_f": null,
         "humidity_pct": 99.0,
         "pressure_msl_inhg": 29.93,
         "wind_speed_mph": 0.0,
         "wind_dir_deg": 69.0,
         "wind_gust_mph": 0.0,
-        "rain_rate_in_hr": 0.0,
-        "rain_daily_in": 0.41,
-        "battery_pct": 44.0,
+        "rain_rate_in_hr": null,
+        "rain_daily_in": null,
+        "battery_pct": null,
         "rssi_dbm": null
       }
     },
