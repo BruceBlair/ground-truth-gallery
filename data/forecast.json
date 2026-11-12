@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T07:30:10Z",
+  "updated": "2026-11-12T08:30:10Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,15 +9,15 @@
     {
       "number": 1,
       "name": "Overnight",
-      "start": "2026-11-12T00:00:00-06:00",
+      "start": "2026-11-12T02:00:00-06:00",
       "end": "2026-11-12T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 55,
-      "wind_speed": "0 to 5 mph",
-      "wind_dir": "NW",
+      "wind_speed": "5 mph",
+      "wind_dir": "NNW",
       "precip_pct": 0,
       "short": "Patchy Fog",
-      "detail": "Patchy fog before 3am. Clear, with a low around 55. Northwest wind 0 to 5 mph.",
+      "detail": "Patchy fog before 3am. Clear, with a low around 55. North northwest wind around 5 mph.",
       "icon": "https://api.weather.gov/icons/land/night/fog?size=medium"
     },
     {
