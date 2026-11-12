@@ -26,7 +26,7 @@
     }
   },
   "online_since": "2026-06-05",
-  "days_online": 159,
+  "days_online": 160,
   "readings": 4437989,
   "rain_avg_in": 10.7,
   "record_high": {
@@ -46,5 +46,5 @@
     "valley_warmer_nights": 5,
     "median_diff_f": -0.1
   },
-  "updated": "2026-11-12T06:15:10Z"
+  "updated": "2026-11-12T12:15:01Z"
 }
