@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T19:30:06Z",
+  "updated": "2026-11-14T20:30:18Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,7 +9,7 @@
     {
       "number": 1,
       "name": "This Afternoon",
-      "start": "2026-11-14T12:00:00-06:00",
+      "start": "2026-11-14T14:00:00-06:00",
       "end": "2026-11-14T18:00:00-06:00",
       "is_daytime": true,
       "temp_f": 68,
