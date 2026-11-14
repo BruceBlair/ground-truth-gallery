@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T22:30:03Z",
+  "updated": "2026-11-13T23:30:07Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,16 +9,16 @@
     {
       "number": 1,
       "name": "This Afternoon",
-      "start": "2026-11-13T14:00:00-06:00",
+      "start": "2026-11-13T17:00:00-06:00",
       "end": "2026-11-13T18:00:00-06:00",
       "is_daytime": true,
       "temp_f": 78,
       "wind_speed": "5 mph",
-      "wind_dir": "SW",
+      "wind_dir": "S",
       "precip_pct": 0,
-      "short": "Sunny",
-      "detail": "Sunny, with a high near 78. Southwest wind around 5 mph.",
-      "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+      "short": "Mostly Sunny",
+      "detail": "Mostly sunny, with a high near 78. South wind around 5 mph.",
+      "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
     },
     {
       "number": 2,
