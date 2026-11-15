@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T19:30:13Z",
+  "updated": "2026-11-15T20:30:12Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,15 +9,15 @@
     {
       "number": 1,
       "name": "This Afternoon",
-      "start": "2026-11-15T13:00:00-06:00",
+      "start": "2026-11-15T14:00:00-06:00",
       "end": "2026-11-15T18:00:00-06:00",
       "is_daytime": true,
       "temp_f": 58,
-      "wind_speed": "5 to 10 mph",
+      "wind_speed": "10 mph",
       "wind_dir": "NE",
       "precip_pct": 48,
       "short": "Chance Rain Showers",
-      "detail": "A chance of rain showers. Mostly cloudy. High near 58, with temperatures falling to around 54 in the afternoon. Northeast wind 5 to 10 mph, with gusts as high as 20 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible.",
+      "detail": "A chance of rain showers. Mostly cloudy. High near 58, with temperatures falling to around 54 in the afternoon. Northeast wind around 10 mph, with gusts as high as 20 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible.",
       "icon": "https://api.weather.gov/icons/land/day/rain_showers,50?size=medium"
     },
     {
