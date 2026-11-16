@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T04:30:05Z",
+  "updated": "2026-11-16T05:30:16Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,13 +9,13 @@
     {
       "number": 1,
       "name": "Tonight",
-      "start": "2026-11-15T18:00:00-06:00",
+      "start": "2026-11-15T23:00:00-06:00",
       "end": "2026-11-16T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 45,
       "wind_speed": "10 mph",
       "wind_dir": "NE",
-      "precip_pct": 17,
+      "precip_pct": 15,
       "short": "Slight Chance Drizzle then Mostly Cloudy",
       "detail": "A slight chance of drizzle before midnight. Mostly cloudy, with a low around 45. Northeast wind around 10 mph, with gusts as high as 20 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
       "icon": "https://api.weather.gov/icons/land/night/rain,20/bkn?size=medium"
