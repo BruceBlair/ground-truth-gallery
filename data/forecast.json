@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T01:30:02Z",
+  "updated": "2026-11-21T02:30:26Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -13,11 +13,11 @@
       "end": "2026-11-21T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 54,
-      "wind_speed": "0 mph",
-      "wind_dir": "",
+      "wind_speed": "0 to 5 mph",
+      "wind_dir": "SSE",
       "precip_pct": 0,
       "short": "Partly Cloudy then Patchy Fog",
-      "detail": "Patchy fog after 5am. Partly cloudy, with a low around 54. South wind around 0 mph.",
+      "detail": "Patchy fog after 5am. Partly cloudy, with a low around 54. South southeast wind 0 to 5 mph.",
       "icon": "https://api.weather.gov/icons/land/night/sct/fog?size=medium"
     },
     {
