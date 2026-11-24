@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T17:30:02Z",
+  "updated": "2026-11-24T18:30:04Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -8,16 +8,16 @@
   "periods": [
     {
       "number": 1,
-      "name": "Today",
-      "start": "2026-11-24T10:00:00-06:00",
+      "name": "This Afternoon",
+      "start": "2026-11-24T12:00:00-06:00",
       "end": "2026-11-24T18:00:00-06:00",
       "is_daytime": true,
       "temp_f": 52,
-      "wind_speed": "10 to 15 mph",
+      "wind_speed": "5 to 15 mph",
       "wind_dir": "N",
-      "precip_pct": 22,
+      "precip_pct": 21,
       "short": "Slight Chance Rain Showers",
-      "detail": "A slight chance of rain showers. Partly sunny, with a high near 52. North wind 10 to 15 mph, with gusts as high as 30 mph. Chance of precipitation is 20%.",
+      "detail": "A slight chance of rain showers before 3pm. Mostly cloudy, with a high near 52. North wind 5 to 15 mph, with gusts as high as 30 mph. Chance of precipitation is 20%.",
       "icon": "https://api.weather.gov/icons/land/day/rain_showers,20?size=medium"
     },
     {
