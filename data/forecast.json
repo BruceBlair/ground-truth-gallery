@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T03:30:29Z",
+  "updated": "2026-11-25T04:30:04Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -12,13 +12,13 @@
       "start": "2026-11-24T21:00:00-06:00",
       "end": "2026-11-25T06:00:00-06:00",
       "is_daytime": false,
-      "temp_f": 31,
+      "temp_f": 34,
       "wind_speed": "0 to 5 mph",
-      "wind_dir": "NNW",
+      "wind_dir": "N",
       "precip_pct": 0,
-      "short": "Mostly Clear",
-      "detail": "Mostly clear, with a low around 31. North northwest wind 0 to 5 mph.",
-      "icon": "https://api.weather.gov/icons/land/night/few?size=medium"
+      "short": "Partly Cloudy",
+      "detail": "Partly cloudy, with a low around 34. North wind 0 to 5 mph.",
+      "icon": "https://api.weather.gov/icons/land/night/sct?size=medium"
     },
     {
       "number": 2,
