@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T14:30:18Z",
+  "updated": "2026-11-26T15:30:20Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,7 +9,7 @@
     {
       "number": 1,
       "name": "Thanksgiving Day",
-      "start": "2026-11-26T08:00:00-06:00",
+      "start": "2026-11-26T09:00:00-06:00",
       "end": "2026-11-26T18:00:00-06:00",
       "is_daytime": true,
       "temp_f": 58,
