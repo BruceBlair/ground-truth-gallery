@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T03:30:14Z",
+  "updated": "2026-11-27T04:30:24Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,7 +9,7 @@
     {
       "number": 1,
       "name": "Tonight",
-      "start": "2026-11-26T20:00:00-06:00",
+      "start": "2026-11-26T22:00:00-06:00",
       "end": "2026-11-27T06:00:00-06:00",
       "is_daytime": false,
       "temp_f": 37,
@@ -17,7 +17,7 @@
       "wind_dir": "",
       "precip_pct": 0,
       "short": "Mostly Cloudy",
-      "detail": "Mostly cloudy, with a low around 37. West northwest wind around 0 mph.",
+      "detail": "Mostly cloudy, with a low around 37. West wind around 0 mph.",
       "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium"
     },
     {
@@ -42,10 +42,10 @@
       "is_daytime": false,
       "temp_f": 42,
       "wind_speed": "5 mph",
-      "wind_dir": "SSW",
+      "wind_dir": "SW",
       "precip_pct": 0,
       "short": "Mostly Clear",
-      "detail": "Mostly clear, with a low around 42. South southwest wind around 5 mph.",
+      "detail": "Mostly clear, with a low around 42. Southwest wind around 5 mph, with gusts as high as 20 mph.",
       "icon": "https://api.weather.gov/icons/land/night/few?size=medium"
     },
     {
@@ -56,10 +56,10 @@
       "is_daytime": true,
       "temp_f": 73,
       "wind_speed": "5 to 15 mph",
-      "wind_dir": "SSW",
+      "wind_dir": "SW",
       "precip_pct": 0,
       "short": "Sunny",
-      "detail": "Sunny, with a high near 73. South southwest wind 5 to 15 mph, with gusts as high as 30 mph.",
+      "detail": "Sunny, with a high near 73. Southwest wind 5 to 15 mph, with gusts as high as 30 mph.",
       "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
     },
     {
