@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T22:30:13Z",
+  "updated": "2026-11-26T23:30:15Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,7 +9,7 @@
     {
       "number": 1,
       "name": "Thanksgiving Day",
-      "start": "2026-11-26T15:00:00-06:00",
+      "start": "2026-11-26T16:00:00-06:00",
       "end": "2026-11-26T18:00:00-06:00",
       "is_daytime": true,
       "temp_f": 60,
@@ -17,7 +17,7 @@
       "wind_dir": "NNW",
       "precip_pct": 0,
       "short": "Sunny",
-      "detail": "Sunny. High near 60, with temperatures falling to around 54 in the afternoon. North northwest wind around 5 mph.",
+      "detail": "Sunny, with a high near 60. North northwest wind around 5 mph.",
       "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
     },
     {
@@ -31,7 +31,7 @@
       "wind_dir": "",
       "precip_pct": 0,
       "short": "Mostly Cloudy",
-      "detail": "Mostly cloudy, with a low around 37. West northwest wind around 0 mph.",
+      "detail": "Mostly cloudy, with a low around 37. Northwest wind around 0 mph.",
       "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium"
     },
     {
