@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T17:30:22Z",
+  "updated": "2026-11-28T18:30:16Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,15 +9,15 @@
     {
       "number": 1,
       "name": "Today",
-      "start": "2026-11-28T10:00:00-06:00",
+      "start": "2026-11-28T11:00:00-06:00",
       "end": "2026-11-28T18:00:00-06:00",
       "is_daytime": true,
       "temp_f": 72,
-      "wind_speed": "10 to 15 mph",
+      "wind_speed": "10 mph",
       "wind_dir": "SSW",
       "precip_pct": 0,
       "short": "Sunny",
-      "detail": "Sunny, with a high near 72. South southwest wind 10 to 15 mph, with gusts as high as 30 mph.",
+      "detail": "Sunny, with a high near 72. South southwest wind around 10 mph, with gusts as high as 30 mph.",
       "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
     },
     {
