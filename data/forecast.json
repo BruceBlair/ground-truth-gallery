@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T14:30:27Z",
+  "updated": "2026-11-28T15:31:07Z",
   "source": "NWS",
   "node_id": "HITHC-RIDGE-N",
   "office": "EWX",
@@ -9,7 +9,7 @@
     {
       "number": 1,
       "name": "Today",
-      "start": "2026-11-28T08:00:00-06:00",
+      "start": "2026-11-28T09:00:00-06:00",
       "end": "2026-11-28T18:00:00-06:00",
       "is_daytime": true,
       "temp_f": 72,
@@ -40,13 +40,13 @@
       "start": "2026-11-29T06:00:00-06:00",
       "end": "2026-11-29T18:00:00-06:00",
       "is_daytime": true,
-      "temp_f": 62,
-      "wind_speed": "10 to 20 mph",
+      "temp_f": 63,
+      "wind_speed": "10 to 25 mph",
       "wind_dir": "NNW",
       "precip_pct": 0,
       "short": "Sunny",
-      "detail": "Sunny, with a high near 62. North northwest wind 10 to 20 mph, with gusts as high as 45 mph.",
-      "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+      "detail": "Sunny, with a high near 63. North northwest wind 10 to 25 mph, with gusts as high as 45 mph.",
+      "icon": "https://api.weather.gov/icons/land/day/wind_few?size=medium"
     },
     {
       "number": 4,
@@ -142,9 +142,9 @@
       "wind_speed": "10 to 15 mph",
       "wind_dir": "SSE",
       "precip_pct": 53,
-      "short": "Chance Rain Showers",
-      "detail": "A chance of rain showers. Mostly cloudy, with a low around 62. Chance of precipitation is 50%.",
-      "icon": "https://api.weather.gov/icons/land/night/rain_showers,20/rain_showers,50?size=medium"
+      "short": "Mostly Cloudy then Chance Rain Showers",
+      "detail": "A chance of rain showers after midnight. Mostly cloudy, with a low around 62. Chance of precipitation is 50%.",
+      "icon": "https://api.weather.gov/icons/land/night/bkn,20/rain_showers,50?size=medium"
     },
     {
       "number": 11,
